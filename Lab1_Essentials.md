@@ -59,7 +59,7 @@ Notice that the first line says `Write a description of class Car here.`Replace 
 
 > Notice that each line of the comments in the beginning of your code begins with a `*`. Do not erase these symbols. Although they are redundant for human readers, these symbols can be used later by software that automatically generate seperate documentation text for your Java code, so that people don't need to dive inside your code to see the documentation and understand what it does.
 
-## Class Declaration
+### Class Declaration
 
 Right below the comments, notice the following line:
 
