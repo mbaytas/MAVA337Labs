@@ -1,4 +1,4 @@
-MAVA 337 Introduction to Programming for Design  (2016 Spring)
+## MAVA 337 Introduction to Programming for Design  (2016 Spring)
 
 # Lab 1: Java and BlueJ Essentials
 
@@ -8,53 +8,94 @@ This lab relates to the first lecture, where the essential "components" of Java 
 
 To survive this lab, make sure you are familiar with the terms below. If you are not familiar with any of these terms, please ask us.
 
-- class
-- object
-- data type
-- method
-- expression
-- assignment
-- documentation
-- debugging
+- **class**
+- **object**
+- **variable**
+- **data type**
+- **method**
+- **expression**
+- **assignment**
+- **documentation**
+- **debugging**
 
 During this lab, you will be developing a piece of software for the university’s campus security. Since parking space on the campus is limited, the university needs to limit the number of cars coming in by charging a fee from students who wish to use the parking facilities. Campus security needs to keep track of the cars that belong to people who have paid their fees. Until now, they have been using pen and paper to do this. You will help them catch up with technology.
 
-## 1)Setting Up BlueJ
+## Setting Up BlueJ
 
-We are hoping that you already have BlueJ up and running on your computer. If not, please go to bluej.org now to download the latest version of the BlueJ for your operating system, and install it on your computer.
+We are hoping that you already have BlueJ up and running on your computer. If not, please go to [bluej.org](http://www.bluej.org) now to download the latest version of the BlueJ for your operating system, and install it on your computer.
 
-## 2)	Creating a Java Project in BlueJ
+## Creating a Java Project in BlueJ
 
-Use BlueJ’s Project menu to create a New Project. Notice that before you write any code at all, you will need to decide on the project’s name, and where it will live on your computer. Name your project “Campus Parking Records” and place it somewhere you can find later.
+Use BlueJ’s *Project* menu to create a *New Project*. Notice that before you write any code at all, you will need to decide on the project’s name, and where it will live on your computer. Name your project “Campus Parking Records” and place it somewhere you can find later.
 
 > It might be wise to make a “MAVA 337” folder to keep all of your projects for this course. The path that I would use would look like the following:
 “…/MAVA 337 Intro to Programming for Design/Java/Lab 1 – Essentials/2 First Java Program/”
 
-> Once the project is created, visit the folder where you put the project and have a look at the contents. Notice that there are two files: package.bluej and README.TXT. package.bluej is your main project file that describes your project to BlueJ. README.TXT describes your project to the general public, which includes people who may or may not have BlueJ.
- 
+> Once the project is created, visit the folder where you put the project and have a look at the contents. Notice that there are two files: "package.bluej" and "README.TXT". "package.bluej" is your main project file that describes your project to BlueJ. "README.TXT" describes your project to the general public, which includes people who may or may not have BlueJ.
+
 ## 3)	Classes
 
-In Java, you fill find that most of your code will be structured around classes. Classes are essentially blueprints/models for objects, which are how your data is represented in the computer.
+In Java, you fill find that most of your code will be structured around **classes**. **Classes** are essentially blueprints/models for **objects**, which are how your data is represented in the computer.
 
 In our project, for now, we need to represent data about one thing only: cars.
 
-Create a New Class named “Car”.
+Create a *New Class* named “Car”.
 
 > Notice that the name of  our class is “Car”. Two things are interesting about this name: First, it is singular – “Car”, not “Cars”; because this class describes how you will represent information about a single car, not a collection of cars. Second, it starts with a capital “C”, because that is a “convention” among Java programmers and it makes easier for other people to read and understand your code.
 
-> In the window that pops up when you click the New Class button, you will see options where you can change the class type. For now, select “Class” (which is already pre-selected, so you don’t have to do anything about it). Don’t worry about the rest of the options.
+> In the window that pops up when you click the *New Class* button, you will see options where you can change the class type. For now, select “Class” (which is already pre-selected, so you don’t have to do anything about it). Don’t worry about the rest of the options.
 
-Double-click the “Car” class in the BlueJ window to see the code for your class.
+Double-click the “Car” **class** in the BlueJ window to see the code for your **class**.
 
-Now visit your project folder. Notice that there is a new file there called “Car.java”. This file was generated by BlueJ when you created the class. Open this file using a text editor. Compare the contents to the contents of the BlueJ window for the “Car” class. Be amazed. Close the text editor.
+Now visit your project folder. Notice that there is a new file there called “Car.java”. This file was generated by BlueJ when you created the **class**. Open this file using a text editor. Compare the contents to the contents of the BlueJ window for the “Car” **class**. Be amazed. Close the text editor.
 
-## 4) Documentation
+## Documentation and Class Declaration
 
-In BueJ’s window for the “Car” class, let’s go over the code. The first section of code begins with the symbols “/*” and ends with the symbols “*/”. These two symbols denote the beginning and the end of comments. Comments are used to provide documentation about your code to other programmers who may have to read and understand what you have done.
+### Documentation
 
-Bonus Material
-Coding Style and Conventions
-http://www.oracle.com/technetwork/java/codeconvtoc-136057.html
-https://google.github.io/styleguide/javaguide.html
+In BlueJ’s window for the “Car” **class**, let’s go over the code. The first section of code begins with `/*` and ends with `*/`. These denote the beginning and the end of **comments**. **Comments** are used to provide **documentation** about your code to other programmers who may have to read and understand what you have done. **Comments** are ignored by the computer when you **compile** and run the code.
 
+Notice that the first line says `Write a description of class Car here.`Replace this with a sentence that describes what your **class** does, for example: `Describes a car.` Replace `(your name)` with your name or "handle" (nickname, username, etc.). Replace `(a version number or a date)` with `2016-02-15`.
 
+> Notice that each line of the comments in the beginning of your code begins with a `*`. Do not erase these symbols. Although they are redundant for human readers, these symbols can be used later by software that automatically generate seperate documentation text for your Java code, so that people don't need to dive inside your code to see the documentation and understand what it does.
+
+## Class Declaration
+
+Right below the comments, notice the following line:
+
+    public class Car
+
+This is called a **class declaration**. It marks the beginning of the code for your **class** begins. All of the code about your **class** will reside between the `{` and `}` marks that follow the **class declaration**.
+
+> The `public` keyword means that other parts of your program will be able to use the functionality of this class.
+
+## Variables and Data Types
+
+Notice the lines:
+
+    // instance variables - replace the example below with your own
+    private int x;
+
+This is where you declare the **variables** for your class, which store information about a car. We need to store 4 pieces of information about each car:
+
+- The name of the student who drives that car. Lets call this variable `studentName`.
+- The ID number of the for the student who drives the car. Lets call this `studentId`.
+- The licence plate for the car. We'll call this one `licencePlate`.
+- Whether or not the student has paid the appropriate fee for their parking privileges. This one will be called `isParkingFeePaid`.
+
+> Notice that, while class names begin with capital letters, variables begin with lower case letters. Again, this is a convention among programmers. Also notice that for both classes and variables, if the name consists of more than one word, no spaces are put between words, and the first letter of each word after the first is always capitalized.
+
+## Constructor
+
+## Methods
+
+## (Bonus Material)
+
+### Coding Style and Conventions
+
+- [Oracle's Official Code Conventions for the Java Programming Language](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
+- [Google Java Style](https://google.github.io/styleguide/javaguide.html)
+
+### Access Control (`public`, `private` and `protected` keywords)
+
+- ["Controlling Access to Members of a Class" in the Official Java Documentation](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
