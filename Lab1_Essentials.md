@@ -1,13 +1,14 @@
-## MAVA 337 Introduction to Programming for Design  (2016 Spring)
+### MAVA 337 Introduction to Programming for Design  (2016 Spring)
 
 # Lab 1: Java and BlueJ Essentials
 
-> Labs are class hours dedicated to give you the opportunity to do some practical programming exercises. Today’s exercises are given below. We will be walking around answering your questions, and we will take the time to explain things to the whole class if a number of you stumble upon the same issues. Feel free to ask questions not only about the exercises, but also about more basic things or more advanced tips and tricks.
+> Labs are class hours dedicated to give you the opportunity to do some practical programming exercises. Today’s exercises are given below. We will be walking around answering your questions, and we will take the time to explain things to the whole class if a number of you stumble upon the same issues. Feel free to ask questions not only about the exercises, but also about more basic concepts or more advanced tips and tricks.
 
 This lab relates to the first lecture, where the essential "components" of Java were covered. After finishing this lab, you should be comfortable with the terms below:
 
 - **class**
 - **object**
+- **instance**
 - **variable**
 - **data type**
 - **method**
@@ -19,7 +20,9 @@ This lab relates to the first lecture, where the essential "components" of Java 
 
 ## Scenario: Campus Parking Records
 
-During this lab, you will be developing a piece of software for the university’s campus security. Since parking space on the campus is limited, the university needs to limit the number of cars coming in by charging a fee from students who wish to use the parking facilities. Campus security needs to keep track of the cars that belong to people who have paid their fees. Until now, they have been using pen and paper to do this. You will help them catch up with the times.
+During this lab, you will be developing a piece of software for the university’s campus security.
+
+Since parking space on the campus is limited, the university limits the number of cars coming in by charging a fee from students who wish to use the parking facilities. Campus security needs to keep track of the cars that belong to people who have paid their fees. Until now, they have been using pen and paper to do this. You will help them catch up with the times.
 
 ## 1) Setting Up BlueJ
 
@@ -27,70 +30,149 @@ We are hoping that you already have BlueJ up and running on your computer. If no
 
 ## 2) Creating a Java Project in BlueJ
 
-Use BlueJ’s *Project* menu to create a *New Project*. Notice that before you write any code at all, you will need to decide on the project’s name, and where it will live on your computer. Name your project “Campus Parking Records” and place it somewhere you can find later.
+- Use BlueJ’s *Project* menu to create a *New Project* called "Campus Parking Records".
 
 > It might be wise to make a “MAVA 337” folder to keep all of your projects for this course. The path that I would use would look like the following:
-“…/MAVA 337 Intro to Programming for Design/Java/Lab 1 – Essentials/2 First Java Program/”
+“…/MAVA 337 Intro to Programming for Design/Java/Lab 1 – Essentials/Campus Parking Records/”
 
 > Once the project is created, visit the folder where you put the project and have a look at the contents. Notice that there are two files: "package.bluej" and "README.TXT". "package.bluej" is your main project file that describes your project to BlueJ. "README.TXT" describes your project to the general public, which includes people who may or may not have BlueJ.
 
 ## 3)	Classes
 
-In Java, you fill find that most of your code will be structured around **classes**. **Classes** are essentially blueprints/models for **objects**, which are how your data is represented in the computer.
+In Java, most of your code will reside inside in **classes**. **Classes** are essentially blueprints/models for **objects**, which are how your data is represented in the computer. In our project, for now, we need to represent data about one kind of thing only: cars.
 
-In our project, for now, we need to represent data about one thing only: cars.
-
-Create a *New Class* named “Car”.
+- Create a *New Class* named `Car`.
+- Double-click the `Car` **class** in the BlueJ window to see the code for your **class**.
 
 > Notice that the name of  our class is “Car”. Two things are interesting about this name: First, it is singular – “Car”, not “Cars”; because this class describes how you will represent information about a single car, not a collection of cars. Second, it starts with a capital “C”, because that is a “convention” among Java programmers and it makes easier for other people to read and understand your code.
 
-> In the window that pops up when you click the *New Class* button, you will see options where you can change the class type. For now, select “Class” (which is already pre-selected, so you don’t have to do anything about it). Don’t worry about the rest of the options.
+> In the window that pops up when you click the *New Class* button, you will see options where you can change the class type. For now, select “Class” (which is already pre-selected, so you don’t have to do anything about it).
 
-Double-click the “Car” **class** in the BlueJ window to see the code for your **class**.
-
-Now visit your project folder. Notice that there is a new file there called “Car.java”. This file was generated by BlueJ when you created the **class**. Open this file using a text editor. Compare the contents to the contents of the BlueJ window for the “Car” **class**. Be amazed. Close the text editor.
+- Now visit your project folder. Notice that there is a new file there called “Car.java”. This file was generated by BlueJ when you created the **class**.
+- Open the "Car.java" file using a text editor. Compare its contents to the contents of the BlueJ window for the `Car` **class**. Be amazed. Close the text editor.
 
 ## 4) Documentation and Class Declaration
 
 ### Documentation
 
-In BlueJ’s window for the “Car” **class**, let’s go over the code. The first section of code begins with `/*` and ends with `*/`. These denote the beginning and the end of **comments**. **Comments** are used to provide **documentation** about your code to other programmers who may have to read and understand what you have done. **Comments** are ignored by the computer when you **compile** and run the code.
+The code for the `Car` **class** begins with the following:
 
-Notice that the first line says `Write a description of class Car here.`Replace this with a sentence that describes what your **class** does, for example: `Describes a car.` Replace `(your name)` with your name or "handle" (nickname, username, etc.). Replace `(a version number or a date)` with `2016-02-15`.
+    /**
+     * Write a description of class Car here.
+     *
+     * @author (your name)
+     * @version (a version number or a date)
+     */
+
+The `/*` and `*/` here denote the beginning and the end of **comments**. **Comments** are used to provide **documentation** about your code to other programmers who may have to read and understand what you have done. **Comments** are ignored by the computer when you **compile** and run the code.
+
+- Replace the phrase `Write a description of class Car here.` with the appropriate information (e.g. `Describes a car.`).
+- Replace `(your name)` with your name/handle/username/nickname.
+- Replace `(a version number or a date)` with `2016-02-15`.
 
 > Notice that each line of the comments in the beginning of your code begins with a `*`. Do not erase these symbols. Although they are redundant for human readers, these symbols can be used later by software that automatically generate seperate documentation text for your Java code, so that people don't need to dive inside your code to see the documentation and understand what it does.
 
-### Class Declaration
+> Notice the selection box on the upper right hand corner of the window. You can use it to switch to the *Documentation* view from the *Source Code* view, and see the aforementioned software-generated documentation.
 
-Right below the comments, notice the following line:
+Right below the comments, notice the **class declaration**:
 
     public class Car
 
-This is called a **class declaration**. It marks the beginning of the code for your **class** begins. All of the code about your **class** will reside between the `{` and `}` marks that follow the **class declaration**.
+This marks the beginning of the code for your **class** begins. All of the code about your **class** will reside between the `{` and `}` marks that follow the **class declaration**.
 
-> The `public` keyword means that other parts of your program will be able to use the functionality of this class.
+- Notice the `public` keyword. This means that other parts of your program will be able to use the functionality of this class. During this course, all of your **classes** declarations will begin with the `public` keyword.
 
-## 5) Variables and Data Types
+### 4) Variables, Properties, and Data Types
 
 Notice the lines:
 
     // instance variables - replace the example below with your own
     private int x;
 
-This is where you declare the **variables** for your class, which store information about a car. We need to store 4 pieces of information about each car:
+This is where you **declare** the **properties** for your class, which store information about a car in **variables**. We need to store 4 specific pieces of information about each car: the name and ID of the student who drives it, its licence plate, and whether or not its parking fee has been paid in full.
 
-- The name of the student who drives that car. Lets call this variable `studentName`.
-- The ID number of the for the student who drives the car. Lets call this `studentId`.
-- The licence plate for the car. We'll call this one `licencePlate`.
-- Whether or not the student has paid the appropriate fee for their parking privileges. This one will be called `isParkingFeePaid`.
+> The first line, beginning with `//`, is a comment. There are no symbols (like `*/`) that mark its end, because `//` designates the whole line as a comment. The comment terminates when you move to the next line.
+
+- Delete the phrase ` - replace the example below with your own`.
+- Notice the `private` keyword. This means that other classes in your program will not be able to directly read or change the **properties** that belong to **instances** of this **class**. During this lab, all of your **variable** declarations will begin with the `private` keyword.
+- Think about what **data types** you will use for these 4 **variables**. To make your life easier, we'll give you 3 choices: `ìnt`, `String`, and `boolean`. Pick from among these.
+- **Declare** a **variable** called `ownerName`, which holds information about the name of the student who drives the car.
+- **Declare** a **variable** called `ownerID` to hold the ID number for the student who drives the car.
+- **Declare** a **variable** called `licencePlate` to hold the car's licence plate information.
+- **Declare** a **variable** called `isFeePaid` to hold information about whether or not the car's parking fee has been paid.
 
 > Notice that, while class names begin with capital letters, variables begin with lower case letters. Again, this is a convention among programmers. Also notice that for both classes and variables, if the name consists of more than one word, no spaces are put between words, and the first letter of each word after the first is always capitalized.
 
-Before you go ahead and declare these **variables**, you need to decide on what **data type** you will use for each *variable**. To make your life easier, we'll give you 3 choices for **data types**: `ìnt`, `String`, and `boolean`. Each of the four **variables** we decided to use if of one of these types.
+- *Compile* your class. Make sure you have no syntax errors.
 
-## 6) Constructor
+## 5) Objects and Instances
 
-## 7) Methods
+- Come back to the main BlueJ window that shows your classes.
+- Right-click the `Car` class and **instantiate** a new `Car` **object**. Name it whatever you want.
+- Double-click the new `Car` object.
+- Observe that all of its variables are `null`, `0`, or `false`. Try to change these values. Taste failure. *Close* the window.
+
+You have **declared** the **variables** that will hold the **properties** for your class, but you can't assign **values** to them. To change the **values** of your **variables**, you will need **methods**.
+
+## 6) Methods
+
+**Variables** store data. **Methods** do things with the data. You will now write **mutator** **methods** for the **properties** of your `Car`**class**.
+
+Inside the code for your `Car` **class**, find the following section:
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y
+     */
+    public void sampleMethod(int y)
+    {
+        // put your code here
+        //return x + y;
+    }
+
+Notice that this portion looks an awful lot like the **class declaration** and the **comments** that precede it.
+
+- Change the name of the sample **method** here from `sampleMethod` to `setOwnerName`.
+- Edit `setOwnerName()` to write a **method** that takes a `String` called `newName` as a **parameter** and **assigns** the **value** of `newName to the **value** of the `ownerName` **variable**.
+- Remember to set the **return type** of the **method** to `void`, since this **method** does not **return** anything.
+- Edit the **documentation** for this **method** to describe what it does, what **parameters** it requires, and what it **returns**.
+- *Compile* your **class**.
+
+Now let's see if you have succeeded in writing the **mutator method** for the `ownerName` property:
+
+- Come back to the main BlueJ window. **Instantiate** a new `Car` **object**.
+- *Inspect* the object to see that its `ownerName` is `null`.
+- Right-click the `Car`**instance** and **call** the `setOwnerName`method. Change the name of the car's owner to `"Ali"`. Notice the quotation marks.
+- *Inspect* the `Car` **instance** again to see that its `ownerName` has indeed been changed to "Ali".
+
+> `"Ali"` denotes a string that contains the **characters** `Ali`. If you omit the quotation marks when supplying this string as a parameter to your method, the computer will not understand that you mean a string, and it will look for a variable named `Ali`.
+
+- Write the **mutator methods** for the remaining three variables.
+- Remember the **documentation**.
+- See that your **mutator methods** are working by **instantiating** a new `Car`and **calling** its **methods**.
+
+## 7) Constructor
+
+Right now we can **set** the **values** of the **properties** on our `Car`s after we create them. However, all of our **properties** are **initialised** with **values** that do not really make sense. To **set** these **values** as we are **instantiating** `Car`**objects**, we need a **constructor**. A **constructor** is basically a **method** that is **called** automatically when you **instantiate** an object.
+
+Inside the code for your `Car` **class**, find the following section:
+
+    /**
+     * Constructor for objects of class Car
+     */
+    public Car()
+    {
+        // initialise instance variables
+        //x = 0;
+    }
+
+Notice that the **constructor** does not have a **return type**, because it is obvious that it **returns** a `Car` **object**.
+
+- Edit the **constructor** to **require** 4 **parameters**: `initOwnerName`, `initOwnerId`, `initLicencePlate`, and `initIsFeePaid`.
+
+## 8) Debugging
 
 ## (Bonus Material)
 
@@ -99,6 +181,8 @@ Before you go ahead and declare these **variables**, you need to decide on what 
 - [Oracle's Official Code Conventions for the Java Programming Language](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 - [Google Java Style](https://google.github.io/styleguide/javaguide.html)
 
-### Access Control (`public`, `private` and `protected` keywords)
+### `public`, `private` and `protected` Keywords (Access Control)
 
 - ["Controlling Access to Members of a Class" in the Official Java Documentation](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
+
+### What does it mean to "compile" code?
