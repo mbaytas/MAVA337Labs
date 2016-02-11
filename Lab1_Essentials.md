@@ -85,6 +85,8 @@ This is where you declare the **variables** for your class, which store informat
 
 > Notice that, while class names begin with capital letters, variables begin with lower case letters. Again, this is a convention among programmers. Also notice that for both classes and variables, if the name consists of more than one word, no spaces are put between words, and the first letter of each word after the first is always capitalized.
 
+Before you go ahead and declare these **variables**, you need to decide on what **data type** you will use for each *variable**. To make your life easier, we'll give you 3 choices for **data types**: `ìnt`, `String`, and `boolean`. Each of the four **variables** we decided to use if of one of these types.
+
 ## Constructor
 
 ## Methods
