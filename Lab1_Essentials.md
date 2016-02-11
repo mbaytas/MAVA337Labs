@@ -18,7 +18,7 @@ To survive this lab, make sure you are familiar with the terms below. If you are
 - **documentation**
 - **debugging**
 
-During this lab, you will be developing a piece of software for the university’s campus security. Since parking space on the campus is limited, the university needs to limit the number of cars coming in by charging a fee from students who wish to use the parking facilities. Campus security needs to keep track of the cars that belong to people who have paid their fees. Until now, they have been using pen and paper to do this. You will help them catch up with technology.
+During this lab, you will be developing a piece of software for the university’s campus security. Since parking space on the campus is limited, the university needs to limit the number of cars coming in by charging a fee from students who wish to use the parking facilities. Campus security needs to keep track of the cars that belong to people who have paid their fees. Until now, they have been using pen and paper to do this. You will help them catch up with the times.
 
 ## Setting Up BlueJ
 
