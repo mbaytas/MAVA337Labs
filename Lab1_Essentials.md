@@ -4,9 +4,7 @@
 
 > Labs are class hours dedicated to give you the opportunity to do some practical programming exercises. Today’s exercises are given below. We will be walking around answering your questions, and we will take the time to explain things to the whole class if a number of you stumble upon the same issues. Feel free to ask questions not only about the exercises, but also about more basic things or more advanced tips and tricks.
 
-This lab relates to the first lecture, where the essential "components" of Java were covered.
-
-To survive this lab, make sure you are familiar with the terms below. If you are not familiar with any of these terms, please ask us.
+This lab relates to the first lecture, where the essential "components" of Java were covered. After finishing this lab, you should be comfortable with the terms below:
 
 - **class**
 - **object**
@@ -16,6 +14,7 @@ To survive this lab, make sure you are familiar with the terms below. If you are
 - **expression**
 - **assignment**
 - **documentation**
+- **comment**
 - **debugging**
 
 During this lab, you will be developing a piece of software for the university’s campus security. Since parking space on the campus is limited, the university needs to limit the number of cars coming in by charging a fee from students who wish to use the parking facilities. Campus security needs to keep track of the cars that belong to people who have paid their fees. Until now, they have been using pen and paper to do this. You will help them catch up with the times.
