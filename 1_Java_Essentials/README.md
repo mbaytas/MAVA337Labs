@@ -2,19 +2,7 @@
 
 # Lab 1: Java and BlueJ Essentials
 
-This lab relates to the first lecture, where the essential "components" of Java were covered. After this lab, you should be comfortable with the terms below:
-
-- **class**
-- **object**
-- **instance**
-- **variable**
-- **data type**
-- **method**
-- **expression**
-- **assignment**
-- **documentation**
-- **comment**
-- **debugging**
+This lab relates to the first lecture, where the essential "components" of Java were covered. After this lab, you should be comfortable with these terms: **class**, **object**, **instance**, **variable**, **data type**, **method**, **expression**, **assignment**, **documentation**, **comment**, **debugging**
 
 ## Scenario: Campus Parking Records
 
@@ -34,7 +22,7 @@ We are hoping that you already have BlueJ up and running on your computer. If no
 
 > Once the project is created, visit the folder where you put the project and have a look at the contents. Notice that there are two files: "package.bluej" and "README.TXT". "package.bluej" is your main project file that describes your project to BlueJ. "README.TXT" describes your project to the general public, which includes people who may or may not have BlueJ.
 
-## 3)	Classes
+## 3) Classes
 
 In Java, most of your code will reside inside in **classes**. Classes are essentially blueprints/models for **objects**, which are how your data is represented in the computer. In our project, for now, we need to represent data about one kind of thing only: cars.
 
