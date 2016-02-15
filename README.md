@@ -18,7 +18,7 @@ Technical **terms** that you must know will be highlighted in **bold** when they
 
 ## The Labs
 
-- [Lab 1 (Java): Essentials](1_Java_Essentials/)
+- [Lab 1 (Java): Classes, Objects, Variables, Methods, Documentation](1_Java_Essentials/)
 - Lab 2 (Java): Conditions, Loops, Object Interactions
 
 ## (Bonus Material)
