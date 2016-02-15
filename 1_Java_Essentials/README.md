@@ -2,9 +2,7 @@
 
 # Lab 1: Java and BlueJ Essentials
 
-> Labs are class hours dedicated to give you the opportunity to do some practical programming exercises. Today’s exercises are given below. We will be walking around answering your questions, and we will take the time to explain things to the whole class if a number of you stumble upon the same issues. Feel free to ask questions not only about the exercises, but also about more basic concepts or more advanced tips and tricks.
-
-This lab relates to the first lecture, where the essential "components" of Java were covered. After finishing this lab, you should be comfortable with the terms below:
+This lab relates to the first lecture, where the essential "components" of Java were covered. After this lab, you should be comfortable with the terms below:
 
 - **class**
 - **object**
@@ -183,29 +181,35 @@ Now let's test the constructor:
 - Observe that you now need to type in the values for its four variables as your are instantiating an object.
 - Right-click the object you just instantiate, and observe that you can still call your **setters** to change the values of its variables.
 
-Congratulations. You now have a piece of software that can help you keep track of the cars.
+Congratulations. You now have a piece of software that can help you keep track of the cars that are allowed to park inside the university campus.
 
 ## 8) Debugging and Calculated Fields
 
-You have delivered the software you wrote to campus security. A few days later, they call you back. They say they liked your code very much and found it very useful. However, there is one more feature that they need to have in the software. They have tried to add this feature themselves, but they made some mistakes. Now the code isn't working anymore, and they need you to fix it.
+You have delivered the software you wrote to campus security. A few days later, they call you back, saying there is one more feature that they need to have in the software. They have tried to add this feature themselves, but they made some mistakes. Their code isn't working, and they need you to fix it.
 
-The new feature they require is this: The total maximum weight of the car, including its passengers and cargo, needs to be known. Cars have information about their "dry weight" on their registration documents. The "total weight" must be calculated from this information by adding 500 kgs to the dry weight.
+The new feature they require is this: The maximum total weight of the car, including its passengers and cargo, needs to be known. Cars have information about their weight on their registration documents. The maximum weight must be estimated from this information by adding 600 kgs to the weight on the registration.
 
-- Download the *parkingrecords.zip* file and extract it into a folder on your computer.
-- Open the BlueJ project.
-- Open up the `Car` class and try to compile it. Notice that there are a number of mistakes in the code that cause the compiler to fail.
-- Find the mistakes in the code and fix them to achieve the functionality that campus security requires: (1) The dry weight of the car must be stored. (2) The total weight of the car must be calculated using the dry weight, and stored in a variable.
+- Go to the *WeightedCar.java* file in this repository. Create a new class inside your BlueJ project called `WeightedCar`. Copy & paste the code in the *WeightedCar.java* file into your new class.
+- Try to compile the `WeightedCar` class. Notice that there are a number of mistakes in the code that cause the compiler to fail.
+- Find the mistakes in the code and fix them to achieve the functionality that campus security requires.
 - Remember to fix the documentation for the `calculateTotalWeight()` method.
 
 ## (Bonus Material)
 
 ### Coding Style and Conventions
 
+- ["Programming Style" on Wikipedia](https://en.wikipedia.org/wiki/Programming_style)
 - [Oracle's Official Code Conventions for the Java Programming Language](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 - [Google Java Style](https://google.github.io/styleguide/javaguide.html)
 
-### `public`, `private` and `protected` Keywords (Access Control)
+Notice that a companies, projects, or communities may adopt conventions and stylistic decisions that are a bit different from the "official" way of doing things.
 
+### Access Control (*public*, *private* and *protected* Keywords)
+
+- ["Variable Scope" on Java Made Easy](http://www.java-made-easy.com/variable-scope.html)
+- ["Difference between public, default, protected, and private?" on Stack Overflow](http://stackoverflow.com/questions/215497/difference-between-public-default-protected-and-private)
 - ["Controlling Access to Members of a Class" in the Official Java Documentation](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
 
 ### What does it mean to "compile" code?
+
+- ["Compiled vs. Interpreted Languages" on Stack Overflow](http://stackoverflow.com/questions/3265357/compiled-vs-interpreted-languages)
