@@ -38,7 +38,7 @@ public class WeightedCar
      *
      * @param regWeight   lalalalala
      */
-    public void calculateTotalWeight(int regWeight)
+    public void calculateMaxWeight(int regWeight)
     {
         return regWeight + 600;
     }
