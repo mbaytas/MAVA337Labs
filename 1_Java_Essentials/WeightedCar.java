@@ -15,7 +15,7 @@ public class WeightedCar
     /**
      * Constructor for objects of class Car
      */
-    public Car(int initRegWeight)
+    public WeightedCar(int initRegWeight)
     {
         regWeight = initRegWeight;
         maxWeight = calculateMaxWeight();
