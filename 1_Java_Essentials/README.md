@@ -50,8 +50,6 @@ In Java, most of your code will reside inside in **classes**. Classes are essent
 
 ## 4) Documentation and Class Declaration
 
-### Documentation
-
 The code for the `Car` class begins with the following:
 
     /**
@@ -79,7 +77,7 @@ This marks the beginning of the code for your class begins. All of the code that
 
 Notice the `public` keyword. This means that other parts of your program will be able to use the functionality of this class. During this course, all of your class declarations will begin with the `public` keyword.
 
-### 4) Variables and Data Types
+## 5) Variables and Data Types
 
 Notice the lines:
 
@@ -106,7 +104,7 @@ Notice the `private` keyword. This means that other classes in your program will
 
 - *Compile* your class. Make sure you have no syntax errors.
 
-## 5) Objects and Instances
+## 6) Objects and Instances
 
 - Come back to the main BlueJ window that shows your classes.
 - Right-click the `Car` class and **instantiate** a new `Car` **object** named `car`. (Notice the lowercase first letter.)
@@ -115,7 +113,7 @@ Notice the `private` keyword. This means that other classes in your program will
 
 You have declared the variables that will store information, but you can't assign **values** to them. To change the values of your variables, you will need **methods**.
 
-## 6) Methods
+## 7) Methods
 
 **Variables** store data. **Methods** do things with the data. You will now write **mutator methods** (a.k.a. **setter methods**) that allow you to change the values of the variables in your `Car` class.
 
@@ -154,7 +152,7 @@ Now let's see if you have succeeded in writing the **setter** for the `ownerName
 - Remember to write the **documentation**.
 - See that your **setters** are working by **instantiating** a new `Car`and **calling** these methods.
 
-## 7) Constructor
+## 8) Constructor
 
 Right now we can **set** the **values** of the **variables** on our `Car`s after we create them. However, all of our variables are **initialised** with values that do not really make sense. To set these values as we are **instantiating** `Car` objects, we need a **constructor**. A constructor is basically a **method** that is **called** automatically when you instantiate an object.
 
@@ -183,7 +181,7 @@ Now let's test the constructor:
 
 Congratulations. You now have a piece of software that can help you keep track of the cars that are allowed to park inside the university campus.
 
-## 8) Debugging and Calculated Fields
+## 9) Debugging
 
 You have delivered the software you wrote to campus security. A few days later, they call you back, saying there is one more feature that they need to have in the software. They have tried to add this feature themselves, but they made some mistakes. Their code isn't working, and they need you to fix it.
 
@@ -191,7 +189,7 @@ The new feature they require is this: The maximum total weight of the car, inclu
 
 - Go to the *WeightedCar.java* file in this repository. Create a new class inside your BlueJ project called `WeightedCar`. Copy & paste the code in the *WeightedCar.java* file into your new class.
 - Try to compile the `WeightedCar` class. Notice that there are a number of mistakes in the code that cause the compiler to fail.
-- Find the mistakes in the code and fix them to achieve the functionality that campus security requires.
+- Find the mistakes in the code and fix them to achieve the functionality that campus security requires. Notice that the `maxWeight` variable is not set during instantiation, and it does not have a setter method. Rather, this variable is calculated from `regWeight`.
 - Remember to fix the documentation for the `calculateTotalWeight()` method.
 
 ## (Bonus Material)
