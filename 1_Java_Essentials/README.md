@@ -32,7 +32,7 @@ We are hoping that you already have BlueJ up and running on your computer. If no
 
 - Use BlueJ’s *Project* menu to create a *New Project* called "Campus Parking Records".
 
-> It might be wise to make a “MAVA 337” folder to keep all of your projects for this course. The path that I would use would look like the following: “…/MAVA 337 Intro to Programming for Design/Java/Lab 1 – Essentials/Campus Parking Records/”
+> It might be wise to make a “MAVA 337” folder to keep all of your projects for this course. The path that I would use could look like the following: “…/MAVA 337 Intro to Programming for Design/Java/Lab 1 – Essentials/Campus Parking Records/”
 
 > Once the project is created, visit the folder where you put the project and have a look at the contents. Notice that there are two files: "package.bluej" and "README.TXT". "package.bluej" is your main project file that describes your project to BlueJ. "README.TXT" describes your project to the general public, which includes people who may or may not have BlueJ.
 
@@ -119,7 +119,7 @@ You have declared the variables that will store information, but you can't assig
 
 ## 6) Methods
 
-**Variables** store data. **Methods** do things with the data. You will now write **mutator methods** (a.k.a. **setter methods**) for the **variables** in your `Car` class.
+**Variables** store data. **Methods** do things with the data. You will now write **mutator methods** (a.k.a. **setter methods**) that allow you to change the values of the variables in your `Car` class.
 
 Inside the code for your `Car` class, find the following section:
 
@@ -185,9 +185,17 @@ Now let's test the constructor:
 
 Congratulations. You now have a piece of software that can help you keep track of the cars.
 
-## 8) Debugging
+## 8) Debugging and Calculated Fields
 
-You have
+You have delivered the software you wrote to campus security. A few days later, they call you back. They say they liked your code very much and found it very useful. However, there is one more feature that they need to have in the software. They have tried to add this feature themselves, but they made some mistakes. Now the code isn't working anymore, and they need you to fix it.
+
+The new feature they require is this: The total maximum weight of the car, including its passengers and cargo, needs to be known. Cars have information about their "dry weight" on their registration documents. The "total weight" must be calculated from this information by adding 500 kgs to the dry weight.
+
+- Download the *parkingrecords.zip* file and extract it into a folder on your computer.
+- Open the BlueJ project.
+- Open up the `Car` class and try to compile it. Notice that there are a number of mistakes in the code that cause the compiler to fail.
+- Find the mistakes in the code and fix them to achieve the functionality that campus security requires: (1) The dry weight of the car must be stored. (2) The total weight of the car must be calculated using the dry weight, and stored in a variable.
+- Remember to fix the documentation for the `calculateTotalWeight()` method.
 
 ## (Bonus Material)
 
