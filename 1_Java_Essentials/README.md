@@ -190,7 +190,8 @@ The new feature they require is this: The maximum total weight of the car, inclu
 - Go to the *WeightedCar.java* file in this repository. Create a new class inside your BlueJ project called `WeightedCar`. Copy & paste the code in the *WeightedCar.java* file into your new class.
 - Try to compile the `WeightedCar` class. Notice that there are a number of mistakes in the code that cause the compiler to fail.
 - Find the mistakes in the code and fix them to achieve the functionality that campus security requires. Notice that the `maxWeight` variable is not set during instantiation, and it does not have a setter method. Rather, this variable is calculated from `regWeight`.
-- Remember to fix the documentation for the `calculateTotalWeight()` method.
+- Remember to fix the documentation for the `calculateMaxWeight()` method.
+- Go back to the main BlueJ window. Instantiate a new 'WeightedCar' object called 'weightedCar'. Make sure the maximum weight is being calculated correctly.
 
 ## (Bonus Material)
 
