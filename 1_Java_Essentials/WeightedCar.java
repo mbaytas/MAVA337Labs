@@ -5,7 +5,7 @@
  * @author Campus Security
  * @version 2016-02-15
  */
-public class Car
+public class WeightedCar
 {
     // instance variables
     private integer regWeight;
