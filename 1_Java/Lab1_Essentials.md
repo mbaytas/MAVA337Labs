@@ -32,8 +32,7 @@ We are hoping that you already have BlueJ up and running on your computer. If no
 
 - Use BlueJ’s *Project* menu to create a *New Project* called "Campus Parking Records".
 
-> It might be wise to make a “MAVA 337” folder to keep all of your projects for this course. The path that I would use would look like the following:
-“…/MAVA 337 Intro to Programming for Design/Java/Lab 1 – Essentials/Campus Parking Records/”
+> It might be wise to make a “MAVA 337” folder to keep all of your projects for this course. The path that I would use would look like the following: “…/MAVA 337 Intro to Programming for Design/Java/Lab 1 – Essentials/Campus Parking Records/”
 
 > Once the project is created, visit the folder where you put the project and have a look at the contents. Notice that there are two files: "package.bluej" and "README.TXT". "package.bluej" is your main project file that describes your project to BlueJ. "README.TXT" describes your project to the general public, which includes people who may or may not have BlueJ.
 
@@ -78,9 +77,9 @@ Right below the comments, notice the **class declaration**:
 
     public class Car
 
-This marks the beginning of the code for your class begins. All of the code about your **class** will reside between the `{` and `}` marks that follow the class declaration.
+This marks the beginning of the code for your class begins. All of the code that belongs to your class will reside between the `{` and `}` marks that follow the class declaration.
 
-- Notice the `public` keyword. This means that other parts of your program will be able to use the functionality of this class. During this course, all of your class declarations will begin with the `public` keyword.
+Notice the `public` keyword. This means that other parts of your program will be able to use the functionality of this class. During this course, all of your class declarations will begin with the `public` keyword.
 
 ### 4) Variables and Data Types
 
@@ -89,19 +88,23 @@ Notice the lines:
     // instance variables - replace the example below with your own
     private int x;
 
-This is where you **declare** the **variables** for your class, which store information about a car. We need to store 4 specific pieces of information about each car: the name and ID of the student who drives it, its licence plate, and whether or not its parking fee has been paid in full.
+This is where you **declare** the **variables** for your class, which store information about a car.
+
+We need to store 4 specific pieces of information about each car: the name and ID of the student who drives it, its licence plate, and whether or not its parking fee has been paid in full.
 
 > The first line, beginning with `//`, is a comment. There are no symbols (like `*/`) that mark its end, because `//` designates the whole line as a comment. The comment terminates when you move to the next line.
 
 - Delete the phrase ` - replace the example below with your own`.
-- Notice the `private` keyword. This means that other classes in your program will not be able to directly read or change the variables that belong to **instances** of this **class**. During this lab, all of your **variable** declarations will begin with the `private` keyword.
+
+Notice the `private` keyword. This means that other classes in your program will not be able to directly read or change the variables that belong to **instances** of this **class**. During this lab, all of your **variable** declarations will begin with the `private` keyword.
+
 - Think about what **data types** you will use for these 4 **variables**. To make your life easier, we'll give you 3 choices: `ìnt`, `String`, and `boolean`. Pick from among these.
 - **Declare** a **variable** called `ownerName`, which holds information about the name of the student who drives the car.
 - **Declare** a **variable** called `ownerID` to hold the ID number for the student who drives the car.
 - **Declare** a **variable** called `licencePlate` to hold the car's licence plate information.
 - **Declare** a **variable** called `isFeePaid` to hold information about whether or not the car's parking fee has been paid.
 
-> Notice that, while class names begin with capital letters, variables begin with lower case letters. Again, this is a convention among programmers. Also notice that for both classes and variables, if the name consists of more than one word, no spaces are put between words, and the first letter of each word after the first is always capitalized.
+> Notice that, while class names begin with capital letters, variables begin with lower case letters. Again, this is a convention among programmers. Also notice that for both classes and variables, if the name consists of more than one word, no spaces are put between words, and the first letter of each word after the first is always capitalized (this is called "camel case").
 
 - *Compile* your class. Make sure you have no syntax errors.
 
@@ -116,7 +119,7 @@ You have declared the variables that will store information, but you can't assig
 
 ## 6) Methods
 
-**Variables** store data. **Methods** do things with the data. You will now write **mutator methods** (a.k.a. **setters**) for the **variables** of your `Car` **class**.
+**Variables** store data. **Methods** do things with the data. You will now write **mutator methods** (a.k.a. **setter methods**) for the **variables** in your `Car` class.
 
 Inside the code for your `Car` class, find the following section:
 
