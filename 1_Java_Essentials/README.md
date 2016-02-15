@@ -183,6 +183,10 @@ The new feature they require is this: The maximum total weight of the car, inclu
 
 ## (Bonus Material)
 
+### What does it mean to "compile" code?
+
+- ["Compiled vs. Interpreted Languages" on Stack Overflow](http://stackoverflow.com/questions/3265357/compiled-vs-interpreted-languages)
+
 ### Coding Style and Conventions
 
 - ["Programming Style" on Wikipedia](https://en.wikipedia.org/wiki/Programming_style)
@@ -196,7 +200,3 @@ Notice that a companies, projects, or communities may adopt conventions and styl
 - ["Variable Scope" on Java Made Easy](http://www.java-made-easy.com/variable-scope.html)
 - ["Difference between public, default, protected, and private?" on Stack Overflow](http://stackoverflow.com/questions/215497/difference-between-public-default-protected-and-private)
 - ["Controlling Access to Members of a Class" in the Official Java Documentation](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
-
-### What does it mean to "compile" code?
-
-- ["Compiled vs. Interpreted Languages" on Stack Overflow](http://stackoverflow.com/questions/3265357/compiled-vs-interpreted-languages)
