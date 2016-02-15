@@ -1,4 +1,4 @@
-# Labs for "MAVA 337 Intro to Programming for Design"
+# Labs for "MAVA 337 Introduction to Programming for Design"
 
 This repository contains the material for the lab sessions for our "MAVA 337 Introduction to Programming for Design" course.
 
