@@ -40,6 +40,6 @@ public class Car
      */
     public void calculateTotalWeight(int regWeight)
     {
-        return regWeight + 500;
+        return regWeight + 600;
     }
 }
