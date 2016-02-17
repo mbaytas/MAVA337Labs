@@ -26,8 +26,10 @@ Technical **terms** that you must know will be highlighted in **bold** when they
 
 Each lab will include links to bonus material that offers detailed explanations to some programming concepts you encounter. These will be fairly advanced content that will most probably raise more questions than they answer.
 
-The links below in this particular section are more general resources that can contribute to your understanding of computing and programming.
+The links below in this particular section are more general resources that can contribute to your knowledge of computing and programming.
 
+- [CodinGame](https://www.codingame.com/)
+- [Computer Science Field Guide](http://www.csfieldguide.org.nz/)
 - [Stack Overflow](http://stackoverflow.com/)
 - [Computerphile (YouTube Channel)](https://www.youtube.com/user/Computerphile)
 - MIT's "6.00 Intro to Computer Science & Programming" lecture videos: [2008 Fall](https://www.youtube.com/playlist?list=PL4C4720A6F225E074), [2011 Spring](https://www.youtube.com/playlist?list=PLB2BE3D6CA77BB8F7)
