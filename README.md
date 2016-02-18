@@ -1,26 +1,28 @@
 # Labs for "MAVA 337 Introduction to Programming for Design"
 
-This repository contains the material for the lab sessions for our "MAVA 337 Introduction to Programming for Design" course.
+This repository contains the material for the lab sessions and project assignments for our "MAVA 337 Introduction to Programming for Design" course.
 
 Labs are class hours dedicated to give you the opportunity to do some practical programming exercises. During the labs, we (your instructor and TA) will be walking around answering your questions. We will take the time to explain things to the whole class if a number of you stumble upon the same issues. Feel free to ask questions not only about the exercises, but also about more basic concepts or more advanced tips and tricks.
 
+Project assignments involve homeworks you do on your own time, along with dedicated class hours where we will be assisting you.
+
 Use the links below or browse the files in the repository to navigate.
 
-## How to Read the Lab Instructions
+## How to Read the Instructions
 
-Throughout the text for the labs, explanatory text that gives context to the instructions and provides vital information will be formatted like this as plain vanilla text.
-
-Technical **terms** that you must know will be highlighted in **bold** when they first appear in the text.
+Throughout the texts, explanatory text that gives context to the instructions and provides vital information will be formatted like this as plain vanilla text. Technical **terms** that you must know will be highlighted in **bold** when they first appear in the text.
 
 - Instructions that you must carefully read, understand, and execute are formatted as bullet points.
 
-> You will also see text that appears like this. These are comments that explain various programming concepts in detail or give tips that can make your life easier. You don't have to read them very carefully to get through the labs, but they will contain useful information.
+> Text that appears like this comprises comments that explain various programming concepts in detail or give tips that can make your life easier. You don't have to read them very carefully to get through, but they will contain useful information.
 
 ## The Labs
 
-- [Lab 1 (Java): Classes, Objects, Variables, Methods, Documentation](1_Java_Essentials/)
-- [Lab 2 (Java): Conditions, Loops, Object Interactions](2_Java_ConditionsLoopsInteractions)
-- [Lab 3 (Java): Arrays, etc.](3_Java_ArraysEtc)
+- [Lab 1 (Java): Classes, Objects, Variables, Methods, Documentation](Lab1_Java_Essentials/)
+- [Lab 2 (Java): Conditions, Loops, Object Interactions](Lab2_Java_ConditionsLoopsInteractions)
+- [Lab 3 (Java): Arrays, etc.](Lab3_Java_ArraysEtc)
+
+## The Project Assignments
 
 ## (Bonus Material)
 
