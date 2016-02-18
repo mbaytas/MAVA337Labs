@@ -30,6 +30,9 @@ Each lab will include links to bonus material that offers detailed explanations 
 
 The links below in this particular section are more general resources that can contribute to your knowledge of computing and programming.
 
+- ["The Two Cultures of Computing" by Philip Guo](http://pgbovine.net/two-cultures-of-computing.htm)
+- ["What Software Is Made Of" by Siderea](http://siderea.livejournal.com/1241996.html)
+- ["Biculturalism" by Joel Spolsky](http://www.joelonsoftware.com/articles/Biculturalism.html)
 - [CodinGame](https://www.codingame.com/)
 - [Computer Science Field Guide](http://www.csfieldguide.org.nz/)
 - [Stack Overflow](http://stackoverflow.com/)
