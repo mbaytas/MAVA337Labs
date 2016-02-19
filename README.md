@@ -21,8 +21,19 @@ Throughout the texts, explanatory text that gives context to the instructions an
 - [Lab 1 (Java): Classes, Objects, Variables, Methods, Documentation](Lab1_Java_Essentials/)
 - [Lab 2 (Java): Conditions, Loops, Object Interactions](Lab2_Java_ConditionsLoopsInteractions)
 - [Lab 3 (Java): Arrays, etc.](Lab3_Java_ArraysEtc)
+- Lab 4 (Processing): TBA
+- Lab 5 (Processing): TBA
+- Lab 6 (Processing): TBA
+- Lab 7 (Arduino): TBA
+- Lab 8 (Arduino): TBA
+- Lab 9 (Arduino): TBA
 
 ## The Project Assignments
+
+- Project Assignment 1: Java
+- Project Assignment 2: Processing
+- Project Assignment 3: Arduino
+- Final Project Assignment
 
 ## (Bonus Material)
 
