@@ -19,8 +19,8 @@ Throughout the texts, explanatory text that gives context to the instructions an
 ## The Labs
 
 - [Lab 1 (Java): Classes, Objects, Variables, Methods, Documentation](Lab1_Java_Essentials/)
-- [Lab 2 (Java): Conditions, Loops, Object Interactions](Lab2_Java_ConditionsLoopsInteractions)
-- [Lab 3 (Java): Arrays, etc.](Lab3_Java_ArraysEtc)
+- [Lab 2 (Java): Conditions and Object Interactions](Lab2_Java_ConditionsInteractions)
+- [Lab 3 (Java): Loops and Arrays](Lab3_Java_LoopsArrays)
 - Lab 4 (Processing): TBA
 - Lab 5 (Processing): TBA
 - Lab 6 (Processing): TBA

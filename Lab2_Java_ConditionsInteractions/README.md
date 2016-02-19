@@ -1,6 +1,6 @@
 ### MAVA 337 Introduction to Programming for Design  (2016 Spring)
 
-# Lab 2: Conditions, Object Interactions
+# Lab 2: Conditions and Object Interactions
 
 This lab relates to the second lecture, where conditions and object interactions were covered. After this lab, you should be comfortable with these terms: **conditional statements**, **boolean**, **relational operators**, **logical operators**, **if statement**, **if-then-else**, **primitive type**, **object type**, **internal method**.
 
