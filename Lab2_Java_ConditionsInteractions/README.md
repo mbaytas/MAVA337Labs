@@ -68,10 +68,16 @@ Notice that we are keeping information about the car's owner (their name and ID 
 - Write the constructor to set the student's name and ID upon instantiation.
 - Write setter and getter methods for the two instance variables. Name these methods `getName()` and `getId()`.
 
-Remember that the general form of simple a getter method (a.k.a. accessor) looks like the following:
+Remember that the general form of simple a **getter** method (a.k.a. accessor) looks like the following:
 
     public type getVar() {
         return var;
+    }
+    
+Conversely, the general form of a simple **setter** method would look like the following:
+
+    public void setVar(type val) {
+        var = val;
     }
 
 - In your `Car` class, delete the lines of code where you declare the `ownerName` and `ownerId` variables. Delete their setters also. Also delete the associated parameters required by the constructor, and delete the lines inside the constructor where you initialize them.
