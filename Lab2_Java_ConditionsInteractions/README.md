@@ -139,7 +139,7 @@ Now let's test the message box:
 - Instantiate a new `Car`. Assign the `Student` you just created as the owner of this car, set `isFeePaid` to `true`, and make sure the car does not weigh more than what's allowed.
 - Run `isAllowedOnCampus()` on the `Car`. You should see something like the following:
 
-![Message Box: "Ali is allowed to park on campus."](messagebox.png)
+![Message Box: "Ali is allowed to park on campus"](messagebox.png)
 
 - Set `isFeePaid` to `false` on the car. Make sure that the text in the message box is updated accordingly.
 
