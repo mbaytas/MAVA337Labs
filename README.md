@@ -28,12 +28,12 @@ Throughout the texts, explanatory text that gives context to the instructions an
 - Lab 8 (Arduino): TBA
 - Lab 9 (Arduino): TBA
 
-## The Project Assignments
+## The Homework Assignments
 
-- Project Assignment 1: Java
-- Project Assignment 2: Processing
-- Project Assignment 3: Arduino
-- Final Project Assignment
+- Homework Assignment 1: Java
+- Homework Assignment 2: Processing
+- Homework Assignment 3: Arduino
+- Final Homework Assignment
 
 ## (Bonus Material)
 
