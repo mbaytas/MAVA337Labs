@@ -122,11 +122,13 @@ Now we will have some fun.
 
 - Between the documentation and your class declaration, place the following line of code:
 
+
     import javax.swing.JOptionPane;
 
 > This means: you are "importing" the JOptionPane class from the Swing **library**. You will now be able to use the functionality inside the JOptionPane class in your own application.
 
 - *After* the second if statement where you composed the `messageString`, where the `return` statement used to be, add the following line:
+
 
     JOptionPane.showMessageDialog(null, messageString);
 
@@ -139,7 +141,7 @@ Now let's test the message box:
 - Instantiate a new `Car`. Assign the `Student` you just created as the owner of this car, set `isFeePaid` to `true`, and make sure the car does not weigh more than what's allowed.
 - Run `isAllowedOnCampus()` on the `Car`. You should see something like the following:
 
-![Message Box: "Ali is allowed to park on campus"](messagebox.png)
+![Message Box: "Ali is allowed to park on campus."](messagebox.png)
 
 - Set `isFeePaid` to `false` on the car. Make sure that the text in the message box is updated accordingly.
 
