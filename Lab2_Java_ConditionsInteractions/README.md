@@ -126,4 +126,15 @@ Now we will have some fun.
 
 Let's break down this line of code. `JOptionPane.showMessageDialog()` calls the `showMessageDialog()` method from the `JOptionPane` class that we had previously **imported** into the project. We are passing two parameters to the `showMessageDialog()` method. The first is a `null` object that actually refers to a "parent component" for the "message dialog" we are about to create. We are not specifying a "parent component," hence, we provide `null`. The second parameter is the text that specifies what message will be displayed.
 
+Now let's test the message box:
+
+- Compile the `Car` class to see that there are no syntax errors.
+- Instantiate a new `Student`.
+- Instantiate a new `Car`. Assign the `Student` you just created as the owner of this car, set `isFeePaid` to `true`, and make sure the car does not weigh more than what's allowed.
+- Run `isAllowedOnCampus()` on the `Car`. You should see something like the following:
+
+![Message Box: "Ali is allowed to park on campus."](messagebox.png)
+
+- Set `isFeePaid` to `false` on the car. Make sure that the text in the message box is updated accordingly.
+
 ### (Bonus Material)
