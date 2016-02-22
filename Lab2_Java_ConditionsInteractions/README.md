@@ -14,13 +14,7 @@ Campus security is very happy with the software you developed earlier. They woul
 - Create a *New Class* called `Car`.
 - Copy the code inside your `Car` class from the previous lab, and paste it into the new `Car` class.
 
-If you don't have this code from the previous lab, follow the instructions below. If you have your it, skip this batch of instructions.
-
-- Declare four **instance variables** (a.k.a. member variables) inside your `Car` class - a `String` called `ownerName`, an `int` called ownerId, a `String` called `licencePlate`, and a `boolean` called isFeePaid.
-- Write four **setter methods** (a.k.a. mutator methods) for your instance variables. These setters should each take one parameter called `newOwnerName`, `newOwnerId`, `newLicencePlate`, and `newIsFeePaid`; and assign the values of their parameter to the appropriate instance variable.
-- Write a **constructor** that takes parameters called `initOwnerName`, `initOwnerId`, `initLicencePlate`, and `initIsFeePaid`; and assigns the values of these parameters to the appropriate instance variables.
-
-Notice that there is a file called "Car.java" in this repo, which has "correct" code that does what your `Car` class should presently be doing. Compare your `Car` class with the code in this file.
+If you don't have this code from the previous lab, please refer to steps 1-8 in the instructions for the previous lab. Notice that there is also a file called "Car.java" in this repo, which has "correct" code that does what your `Car` class should presently be doing. Compare your `Car` class with the code in this file.
 
 Finally, remember last week's "debugging" task, where we had to deal with keeping track of a car's weight. For this lab, we also need to deal with the same information, but things will be a bit simpler:
 
@@ -58,7 +52,7 @@ Now lets **test** this functionality:
 
 - Instantiate a new `Car` object called `paidLightCar` which represents a car for which the parking fee has been paid. Set its `weight` to 1200.
 - Make sure that `paidLightCar` is allowed into campus.
-- Instantiate a new `Car` object called `unpaidLightCar` which represents a car for which the parking fee has -not* been paid. Set its `weight` to 1200.
+- Instantiate a new `Car` object called `unpaidLightCar` which represents a car for which the parking fee has *not* been paid. Set its `weight` to 1200.
 - Make sure that `unpaidLightCar` is *not* allowed into campus.
 - Instantiate a new `Car` object called `heavyCar` that weighs 3000 kg.
 - Make sure that `heavyCar` is not allowed into the campus.
@@ -68,7 +62,7 @@ Now your `Car` objects have an `isAllowdIntoCampus()` method that security can c
 
 ### 3) Object Interactions
 
-Notice that we are keeping information about the car's owner (their name and ID number) in two instance variables that belong to the `Car` class. This is not optimal, for many reasons. For example, a student can have more than one vehicle that they want to register for parking on campus. We may also want to extend our system in the future, to store more information about students. Thus, we will now create a new `Student` class and associate `Student` objects with our `Car` objects.
+Notice that we are keeping information about the car's owner (their name and ID number) in two instance variables that belong to the `Car` class. This is not optimal, for many reasons. For example, a student can have more than one vehicle that they want to register for parking on campus. We may also want to extend our system in the future, to represent more information. Thus, we will now create a new `Student` class and associate `Student` objects with our `Car` objects.
 
 - Create a new class called `Student` with two instance variables: an `int` called `id` and a `String` called `name`.
 - Write the constructor to set the student's name and ID upon instantiation.
@@ -108,15 +102,15 @@ To show the student's name, we need to retrieve it by calling the `getName()` me
 
 Remember that the student who owns the car is represented by the `owner` variable in the `Car` class.
 
-- Inside `isAllowedOnCampus()`, write an if statement *after* the first one. This if statement should check the value of `isAllowed`.
-- Depending on the value of `isAllowed`, inside your second if statement, you will prepare a string of text that informs security of the name of the car's owner, and whether or not they are allowed to park on campus. To store this string, declare a variable called `messageString` at the beginning of the code for your method.
-- Inside your second if statement, set the message string depending on the value of `isAllowed`.
+- Inside `isAllowedOnCampus()`, write an if statement *after* the first one. This second if statement should check the value of `isAllowed`, which you set inside the first if statement.
+- Depending on the value of `isAllowed`, inside your second if statement, you will prepare a string of text that informs security of the name of the car's owner, and whether or not they are allowed to park on campus. To store this string, declare a variable called `messageString` at the beginning of your method's code.
+- Inside your second if statement, set the message string depending on the value of `isAllowed`, as explained below.
 
 To make a nice, readable message, you will have to use a technique called **string concatenation** where you add two strings together. The line of code that does this should look like the following:
 
     messageString = ownerName + " is allowed to park on campus."
 
-There are exactly two places in your code where such instructions should appear. For one of them, you should change the second part of the string to say that the person is *not* allowed to park on campus.
+There are exactly two places in your code where such instructions should appear. For one of them, you should change the second part of the string to say that the person is *not* allowed to park on campus. Depending on the value of `isAllowed`, make the two options for your message string .
 
 Now we will have some fun.
 
@@ -131,6 +125,5 @@ Now we will have some fun.
     JOptionPane.showMessageDialog(null, messageString);
 
 Let's break down this line of code. `JOptionPane.showMessageDialog()` calls the `showMessageDialog()` method from the `JOptionPane` class that we had previously **imported** into the project. We are passing two parameters to the `showMessageDialog()` method. The first is a `null` object that actually refers to a "parent component" for the "message dialog" we are about to create. We are not specifying a "parent component," hence, we provide `null`. The second parameter is the text that specifies what message will be displayed.
-
 
 ### (Bonus Material)
