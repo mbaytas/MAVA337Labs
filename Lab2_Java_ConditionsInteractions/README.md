@@ -142,3 +142,5 @@ Now let's test the message box:
 - "[Java Programming -- 3 -- Using external libraries](https://youtu.be/PoyGznP8Ehkp)" by TheJavaProgramming
 - "[Is there a difference between packages in Java and libraries in C++](https://youtu.be/PoyGznP8Ehk)" on Stack Overflow
 - "[Java: Primitive Type vs. Class Type](http://www.programmerinterview.com/index.php/java-questions/difference-between-a-primitive-type-and-a-class-type/)" on ProgrammerInterview.com 
+- "[Primitive Data Types in Java](http://stackoverflow.com/questions/10430582/primitive-data-types-in-java)" on Stack Overflow
+- "[Swing (Java)](https://en.wikipedia.org/wiki/Swing_(Java))" on Wikipedia
