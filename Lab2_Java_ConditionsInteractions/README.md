@@ -138,3 +138,7 @@ Now let's test the message box:
 - Set `isFeePaid` to `false` on the car. Make sure that the text in the message box is updated accordingly.
 
 ### (Bonus Material)
+
+- "[Java Programming -- 3 -- Using external libraries](https://youtu.be/PoyGznP8Ehkp)" by TheJavaProgramming
+- "[Is there a difference between packages in Java and libraries in C++](https://youtu.be/PoyGznP8Ehk)" on Stack Overflow
+- "[Java: Primitive Type vs. Class Type](http://www.programmerinterview.com/index.php/java-questions/difference-between-a-primitive-type-and-a-class-type/)" on ProgrammerInterview.com 
