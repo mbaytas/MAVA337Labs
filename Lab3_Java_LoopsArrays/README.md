@@ -1,6 +1,6 @@
 ### MAVA 337 Introduction to Programming for Design  (2016 Spring)
 
-# Lab 3: Arrays, Loops, etc.
+# Lab 3: Loops, Arrays, etc.
 
 This lab relates to the second and third lectures, where loops, arrays, ArrayLists and an review of the previous Java topics were covered. After this lab, you should be comfortable with these terms: **for loop**, **while loop**, **array**, **ArrayList**, **index**, **array length**, **iteration**, **infinite loop**.
 
