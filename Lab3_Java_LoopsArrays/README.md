@@ -20,8 +20,7 @@ We'll begin by developing a simple `Course` class to hold information about Cour
 
 - Create a new project, if you haven't done so already.
 - Create a new class called `Course`.
-- Declare an two instance variables of type `String`, called `name` and `description`. Write getter and setter methods for these. Require them upon instantiation as constructor parameters, and set them inside the constructor.
-- Declare an array of `String`s with 10 items, called `students`.
+- As an instance variable in the `Course` class, declare an array of `String`s, **length** 10, called `students`.
 
 > Notice how the properties of the data structures we employ for this representation of real-world information is consistent with the constraints of the reality. The registrar usually sets the capacity of a course at the beginning, when the course is created in the system. Normally, the capacity does not change afterwards. Thus, the use of an array to hold information about students makes sense.
 
@@ -35,7 +34,7 @@ Now, for convenience, let's imagine that there are 10 students in the university
 
 Now lets do some testing.
 
-- Instantiate a new `Course` object with a name and description of your choosing.
+- Instantiate a new `Course` object.
 - Inspect the `students` variable. Confirm that all the names you put in are there.
 
 ### 2) for Loops
@@ -87,10 +86,24 @@ Now let's test this functionality:
 - Call the method `showStudens()` on the new object.
 - See the names of the 10 students in the message box. Make sure all 10 of them are there. Rejoice.
 
-### 3) while Loops
+### 3) ArrayLists
 
-### 4) ArrayLists
+The main difference between an array and an **ArrayList** is that you can change the size ("length") of an ArrayList.  We will go over the same scenario of managing information about students taking a course, using an ArrayList instead of an array.
+
+- Create a new class called `DynamicCourse`.
+- Import the ArrayList class into your code, from `java.util`.
+- Declare a new `ArrayList` called `students` to hold the names of the students who are taking the course.
+
+Now, you will write four functions for the `DynamicCourse` class that will accomplish the some tasks:
+
+- Write a function for adding students into the `students` ArrayList. This function should require a single parameter of type `String`, which is the name of the student to be added.
+- Write a function for displaying all of the names of the students in the course, as a list, in a messagebox. This function should utilize a **for loop** and the `JOptionPane.showMessageDialog()` function. This is essentially the same as what you did in the previous exercise, so you can copy and paste code from there. You may need to make small changes since you now have an ArrayList that holds student names instead of an array. You will probably need to use the ArrayList's `get()` function.
+- Write a function that receives the name of a student as a parameter, finds the **index** of that name (probably using a **fow loop**) within the `students` ArrayList, and removes that name from the ArrayList.
+
+### 4) while Loop
+
+- As an exercise, revisit the code you wrote for the `DynamicCourse` class. Replace every occurrance of a **for loop** with a **while loop**
 
 ### (Bonus Material)
 
-(Coming soon...)
+- "[Difference between Array vs ArrayList in Java](http://java67.blogspot.com.tr/2012/12/difference-between-array-vs-arraylist-java.html)" by Javin Paul on Java67
