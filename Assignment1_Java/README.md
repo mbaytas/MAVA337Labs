@@ -37,7 +37,7 @@ These add up to 25 points, which represents 25% of your final grade from this co
 #### Bonus points:
 
 - Comments in [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html) format: 1 point
-- Conforming to [this Java Programming Style Guide](http://www.javaranch.com/styleLong.jsp): 2 points
+- Conforming perfectly to [this Java Programming Style Guide](http://www.javaranch.com/styleLong.jsp): 2 points
 
 We will not be automatically checking your work for these. If you have put in the effort to get these bonus points, please tell us in the e-mail as you submit your work.
 
