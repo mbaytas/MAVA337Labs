@@ -8,7 +8,11 @@ The lectures, lecture slides, and labs should cover all of the information that 
 
 > You will notice there are a lot of technical terms in the instructions. This is intentional. Most of what programmers do today is piecing together bits and pieces of code they find online. To find these bits and pieces, you need to search for the right keywords. You want to know the language of programming, not a particular programming language.
 
-**Notice:** You are expected to observe the code of academic honesty that is included in the course syllabus. Please don't copy each other's work. We will know if you do. However, we will not be able to know who supplied the code and who copied it, so both parties will suffer if we detect cheating. 
+### Academic Honesty
+
+You are expected to observe the code of academic honesty that is included in the course syllabus. Please don't copy each other's work. We will know if you do. However, we will not be able to know who supplied the code and who copied it, so both parties will suffer if we detect cheating.
+
+Remember that you can rely on any resources, including any code you find online. We have written up these labs and assignments from scratch, so we are pretty confident that you will not find a complete solution to them anywhere else. However, you may find it convenient to use little **snippets** of code written by other people and published online. If you do this, *put a comment in your code which says where you got the snippet from (provide a link), and what exactly it does*.
 
 ### Submission Instructions
 
