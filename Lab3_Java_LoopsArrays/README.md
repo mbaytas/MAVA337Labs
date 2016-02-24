@@ -70,6 +70,8 @@ Inside your loop, each iteration should access an element of the `students` arra
 - Next, write another line of code that declares a variable called `stringToAppend`, adds the characters "`\n`" to the end of the `nameToAppend` string, and assign the result to this variable.
 - Finally, append the `stringToAppend` to the message string.
 
+> You may have noticed that while we took three lines of code to realize the instructions above, they could have been written shorter - e.g. `messageString += students[i] + "\n";`. However, in most cases, using more lines of code to explicitly write out instructions helps you think. Once you figure out how to do what you want to do, you can always come back and shorten it. Coming back and editing your code to improve readability, performance, etc. is called **refactoring**.
+
 > Unless you are a somewhat experienced Java programmer with good habits, you will probably get an error if you compile your class at this point. Read any error messages carefully, contemplate for a bit, and google them.
 
 The characters "`\n`" will be interpreted by the computer as a "new line" command.
