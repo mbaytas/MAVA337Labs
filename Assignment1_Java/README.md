@@ -17,7 +17,9 @@ Name the project directory `1_Java_YourName`. Compress it into a `.zip` file wit
 - Working code for Part 1: 3 points
 - Working code for Part 2: 3 points
 - Working code for Part 3: 2 points
-- Working code for Part 4: 10 points
+- Working code for Part 4 / Course : 4 points
+- Working code for Part 4 / Student : 4 points
+- Working code for Part 4 / Car : 2 points
 - Comments on classes and methods explaining what they do: 2 points
 - Properly indented code: 4 points
 - All variable and method names in proper lower camel case: 1 point
