@@ -10,7 +10,9 @@ The lectures, lecture slides, and labs should cover all of the information that 
 
 ### Submission Instructions
 
-Name the project directory `1_Java_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA.
+Name the project directory `1_Java_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
+
+Due 23:59 on February 9, 2016.
 
 ### Grading Rubric
 
@@ -45,34 +47,34 @@ Create a new project in BlueJ. The three classes that make up your assignment pr
 
 Write a class called `Student` that represents the following information about a student:
 
-- first name
-- last name
-- university id number
+- first name (use a `String` called `firstName`)
+- last name (use a `String` called `lastName` )
+- university id number (use an `int` called `id`)
 
-This information should be held in 3 instance variables, which are accessible from outside the class by the appropriate getter and setter methods. All three of them should be initialized upon instantiation of new `Student` objects, via the constructor (as parameters).
+This information should be held in 3 instance variables, which are accessible from outside the class by the appropriate **getter** and **setter** methods. All three of them should be initialized upon instantiation of new `Student` objects, via the **constructor** (as parameters).
 
 ### 2) Courses
 
 Write a class called `Course` that can store the following information in instance variables:
 
-- the three-digit course number
-- the name of the course
-- a list of the students taking the course
+- the three-digit course number (use an `int` called `number`)
+- the name of the course (use a `String` called `name`)
+- the students taking the course (use an `Array` of `Student`s called `students`)
 
-Include getter and setter methods for the name and number of the course. Require them as parameters for the constructor and initialize them therein.
+Include **getter** and **setter* methods for the name and number of the course. Require them as parameters for the **constructor** and initialize them therein.
 
-For the list of students taking the course, use a `list` of `Student`s. Upon instantiation of `Course` objects, initialize this list with a default length of 10. Omit the usual getter and setter methods. Only declare and initialize the list. We will deal with it later.
+For the array of students taking the course, use an `array` of `Student`s. Upon instantiation of `Course` objects, initialize this array with a default length of 10. Omit its usual getter and setter methods for now; only declare and initialize the array. We will deal with getting and setting it later.
 
-Finally, write a method called `getYear()` that returns the first digit of the course number as an `int`.
+Finally, write a method called `getYear()` that returns the first digit of the course number as an `int`. (Hint: Use [maths and loops](http://stackoverflow.com/questions/2051817/return-first-digit-of-an-integer); or: [convert the integer to a string](http://stackoverflow.com/questions/4105331/how-to-convert-from-int-to-string), [extract the first character in the string](http://stackoverflow.com/questions/11229986/get-string-character-by-index-java), [convert that character to an int](http://stackoverflow.com/questions/5585779/converting-string-to-int-in-java), and return it.)
 
 ### 3) Parking
 
 Write a class called `Car` that can store the following information:
 
-- make (e.g. "VW", "Renault", "Koenigsegg", etc.)
-- owner (a `Student`!)
+- make (e.g. "VW", "Renault", "Koenigsegg", etc.) (use a `String` called `make`)
+- owner (use `Student` called `owner`)
 
-Include getter and setter methods for these variables. Require and initialize them in the constructor.
+Include **getter** and **setter** methods for these variables. Require and initialize them in the **constructor**.
 
 ### 4) Integration
 
@@ -80,17 +82,17 @@ Now you will connect the `Student`, `Course`, and `Car` classes together to crea
 
 #### `Course`
 
-Remember how we omitted the getter and setter methods for the `list` of `Student`s? Those were the [good times](https://youtu.be/rTusMLs9SJE). Add the following to the `Course` class:
+Remember how we omitted the getter and setter methods for the `array` of `Student`s? Those were the [good times](https://youtu.be/rTusMLs9SJE). Add the following to the `Course` class:
 
-- a method called `StudentsToString()` that returns a `String` with the **names** of the students in the list, seperated by newlines
-- a method called `addStudent()` that adds a `Student` object (as a parameter) to the list, returns `true` if the operation is successful, and returns `false` if the list is full
-- a method that called `removeStudent()` finds and removes a `Student` object (as a parameter) from the list, returns `true` if the operation is successful, and returns `false` if there aren't any students by the specified name in the course list
+- a method called `StudentsToString()` that returns a `String` with the **names** of the students in the array, seperated by newlines (Hints: Use a for loop and string concatenation. Remember the newline symbol: `\n`)
+- a method called `addStudent()` that adds a `Student` object (as a parameter) to the array, returns `true` if the operation is successful, and returns `false` if the array is full (Hint: Use a for loop to [find an index on your array where the item is `null`](http://www.programcreek.com/2014/04/check-if-array-contains-a-value-java/), assign the new student at that index. Return false if the whole arrayli is non-null.)
+- a method that called `removeStudent()` finds and removes a `Student` object (as a parameter) from the array, returns `true` if the operation is successful, and returns `false` if there aren't any students by the specified name in the array (Hint: Use a for loop to [find the index of the student you're looking for](http://www.programcreek.com/2014/04/check-if-array-contains-a-value-java/), remove the element at that index. Return false if no students by that name exist in the array.)
 
 #### `Student`
 
 Add the following to the `Student` class:
 
-- a method called `takeCourse()` that requires a `Course` object as a parameter, uses the `addStudent()` method on the `Course` object to add the student to the course list, returns `true` if the operation is successful, and returns `false` if the list is full (hint: `addStudent()` already should return the appropriate value)
+- a method called `takeCourse()` that requires a `Course` object as a parameter, uses the `addStudent()` method on the `Course` object to add the student to the course array, returns `true` if the operation is successful, and returns `false` if the list is full (hint: `addStudent()` already should perform this operation and return the appropriate value, call it.)
 - an instance variable, type `ArrayList` of `int`s, called `parkingTickets`
 - a method called `addParkingTicket()` that requires an `int` as a parameter and appends this `int` to `parkingTickets`
 
@@ -98,4 +100,4 @@ Add the following to the `Student` class:
 
 Add the following to the `Car` class:
 
-- a method called `punish()` that requires an `int` as a parameter and uses the `addParkingTicket()` function on the `Student` who owns the car to append the `int` to their `ArrayList` of parking tickets
+- a method called `punish()` that requires an `int` as a parameter and calls the `addParkingTicket()` function on the `Student` who owns the car to append the `int` to their `ArrayList` of parking tickets
