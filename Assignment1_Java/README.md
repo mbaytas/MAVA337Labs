@@ -14,7 +14,7 @@ The lectures, lecture slides, and labs should cover all of the information that 
 
 Name the project directory `1_Java_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
 
-Due 23:59 on February 9, 2016.
+Due 23:59 on March 9, 2016.
 
 ### Grading Rubric
 
