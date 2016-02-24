@@ -61,7 +61,7 @@ Write a class called `Course` that can store the following information in instan
 - the name of the course (use a `String` called `name`)
 - the students taking the course (use an `Array` of `Student`s called `students`)
 
-Include **getter** and **setter* methods for the name and number of the course. Require them as parameters for the **constructor** and initialize them therein.
+Include **getter** and **setter** methods for the name and number of the course. Require them as parameters for the **constructor** and initialize them therein.
 
 For the array of students taking the course, use an `array` of `Student`s. Upon instantiation of `Course` objects, initialize this array with a default length of 10. Omit its usual getter and setter methods for now; only declare and initialize the array. We will deal with getting and setting it later.
 
