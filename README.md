@@ -44,6 +44,7 @@ The links below in this particular section are more general resources that can c
 - "[The Two Cultures of Computing](http://pgbovine.net/two-cultures-of-computing.htm)" by Philip Guo
 - "[What Software Is Made Of](http://siderea.livejournal.com/1241996.html)" by Siderea
 - "[Biculturalism](http://www.joelonsoftware.com/articles/Biculturalism.html)" by Joel Spolsky
+- [Python Tutor - Visualize Python, Java, JavaScript, TypeScript, Ruby, C, and C++ code execution](http://pythontutor.com/)
 - [CodinGame](https://www.codingame.com/)
 - [Computer Science Field Guide](http://www.csfieldguide.org.nz/)
 - [Stack Overflow](http://stackoverflow.com/)
