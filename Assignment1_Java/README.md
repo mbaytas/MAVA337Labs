@@ -98,9 +98,13 @@ Remember how we omitted the getter and setter methods for the `array` of `Studen
 
 Add the following to the `Student` class:
 
-- a method called `takeCourse()` that requires a `Course` object as a parameter, uses the `addStudent()` method on the `Course` object to add the student to the course array, returns `true` if the operation is successful, and returns `false` if the list is full (hint: `addStudent()` already should perform this operation and return the appropriate value, call it.)
+- a method called `takeCourse()` that requires a `Course` object as a parameter, uses the `addStudent()` method on the `Course` object to add the student to the course array, returns `true` if the operation is successful, and returns `false` if the list is full (Hint 1: `addStudent()` already should perform this operation and return the appropriate value, call it.)  (Hint 2: You have to use the `this` keyword to refer to the current student object when calling the `addStudent()` method.)
 - an instance variable, type `ArrayList` of `int`s, called `parkingTickets`
 - a method called `addParkingTicket()` that requires an `int` as a parameter and appends this `int` to `parkingTickets`
+
+**EDIT:** For the `takeCourse()` method, use somewhing like the line below to add the student to the course list:
+
+    course.addStudent(this);
 
 #### `Car`
 
