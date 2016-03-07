@@ -81,7 +81,7 @@ Now we have one column of 4 circles. Lets have two columns!
 - Edit the inside of the second for loop so that the center points of the circles in the second column lie 110 pixels to the right of the left border of the canvas.
 - Run your code. You should see something like the following:
 
-![8 Circles](eightCircles)
+![8 Circles](eightCircles.png)
 
 ### 5) Creating Shapes via Mouse
 
