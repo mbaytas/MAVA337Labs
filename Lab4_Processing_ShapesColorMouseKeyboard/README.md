@@ -128,8 +128,8 @@ Here's a final screenshot to keep you motivated:
 
 ### (Bonus Material)
 
+- [Recreating Vintage Computer Art with Processing](https://youtu.be/LaarVR1AOvs) by Alexander Miller on YouTube
 - [Tutorials on processing.org](https://processing.org/tutorials/)
 - [Examples on processing.org](https://processing.org/examples/)
 - [Exhibition on processing.org](https://processing.org/exhibition/)
 - [Language Reference on processing.org](https://processing.org/reference/)
-- [Recreating Vintage Computer Art with Processing](https://youtu.be/LaarVR1AOvs) by Alexander Miller on YouTube
