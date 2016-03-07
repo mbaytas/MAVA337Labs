@@ -107,6 +107,21 @@ To have our circles and rectangle appear behind the newly created squares, we ha
 
 ![Little Blue Squares in Foreground](squaresOnTop.png)
 
+### 7) Keyboard Interactions and Changing Color
+
+Finally, we'll use the keyboard to change the color of our little squares that we've been placing on the canvas with mouse clicks. We will move out of the `draw()` loop and use the `keyPressed()` method for this.
+
+- Declare the `keyPressed()` method in your code, below the `draw()` function.
+- Inside the `keyPressed()` method, write a line of code that calls the `fill()` function and assigns a random color to the fill. Since the `random()` function was not covered in the lecture, we'll just give you the line of code you should put in there: `fill(random(255), random(255), random(255));`
+
+> `random(255)` returns a random integer between 0 and 255. Check out the [documentation for the `random()` function](https://processing.org/reference/random_.html) for more info.
+
+> The [documentation on color mode](https://processing.org/reference/colorMode_.html) is also interesting.
+
+- Compile and run your code. Click the canvas to draw a square. Press a key to change the color. Click the canvas to draw another square. Notice that the color has not changes. Try and fail a few more times. Contemplate why your new squares are not being drawn with a randomly colored fill. Solve the problem yourself =) (Hint: See section 6 of this lab.)
+
+> Notice how we haven't instructed you to put in any comments in your code. While we will no longer explicitly ask for comments in the lab instructions, we will be expecting you to properly comment the code that you submit for grading later. It is also a good idea to label chunks of code with comments that remind you about its functionality.
+
 ### (Bonus Material)
 
 - [Tutorials on processing.org](https://processing.org/tutorials/)
