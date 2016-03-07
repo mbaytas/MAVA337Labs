@@ -118,7 +118,7 @@ Finally, we'll use the keyboard to change the color of our little squares that w
 
 > The [documentation on color mode](https://processing.org/reference/colorMode_.html) is also interesting.
 
-- Compile and run your code. Click the canvas to draw a square. Press a key to change the color. Click the canvas to draw another square. Notice that the color has not changes. Try and fail a few more times. Contemplate why your new squares are not being drawn with a randomly colored fill. Solve the problem yourself =) (Hint: See section 6 of this lab.)
+- Compile and run your code. Click the canvas to draw a square. Press a key to change the color. Click the canvas to draw another square. Notice that the color has not changed. Try and fail a few more times. Contemplate why your new squares are not being drawn with a randomly colored fill. Solve the problem yourself. (Hint: See section 6 of this lab.)
 
 Here's a final screenshot to keep you motivated:
 
