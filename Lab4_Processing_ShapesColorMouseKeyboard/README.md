@@ -47,7 +47,8 @@ Now let's **fill** the circle with green color. We had a hard time deciding on t
 
 ![Green Circle](greenCircle.png)
 
-> Notice that you can put these "modifier" functions before or after the line of code that creates the shape.
+> Notice that you need to put these "modifier" functions before the line of code that creates the shape. For more info on  *exactly* how they work, check out the documentation. For example, the [documentation for the `fill()` function states](https://processing.org/reference/fill_.html): *Sets the color used to fill shapes. For example, if you run fill(204, 102, 0), all subsequent shapes will be filled with orange. This color is either specified in terms of the RGB or HSB color depending on the current colorMode(). The default color space is RGB, with each value in the range from 0 to 255.*
+
 
 Our circle is looking a bit lonely, so we'll add a rectangle to our canvas.
 
