@@ -6,7 +6,7 @@ This lab relates to the first lecture on Processing, where shapes, colors, and i
 
 ## Scenario:
 
-Today we're just going to practice putting things on the screen and moving them around. We will also see how the programming skills you learnefd previously with Java translate to Processing.
+Today we're just going to practice putting some shapes on the screen and coloring them in. We will also see how the programming skills you learnefd previously with Java translate to Processing.
 
 ### 1) Setting Up Processing
 
