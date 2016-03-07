@@ -41,7 +41,7 @@ Now let's put a circle on the screen. A circle is essentially an ellipse with eq
 
 Now let's **fill** the circle with green color. We had a hard time deciding on the color of its **stroke**, so we'll go with no stroke.
 
-- Use the `fill()` function to make the circle green.
+- Use the `fill()` function, before `ellipse()`,  to make the circle green.
 - Use the `noStroke()` function to kill the circle's stroke.
 - Run your code. You should see the following:
 
