@@ -4,7 +4,7 @@
 
 This lab relates to the first lecture on Processing, where shapes, colors, and interactivity through the mouse and the keyboard were covered, in addition to the basics of Processing. After this lab, you should be comfortable with these terms: **function**, **draw()**, **setup()**, **canvas**, **stroke**, **fill**, **coordinate system**, **color model** (e.g. RGB, CMYK...),
 
-## Scenario:
+## Scenario
 
 Today we're just going to practice putting some shapes on the screen and coloring them in. We will also see how the programming skills you learnefd previously with Java translate to Processing.
 
