@@ -120,6 +120,10 @@ Finally, we'll use the keyboard to change the color of our little squares that w
 
 - Compile and run your code. Click the canvas to draw a square. Press a key to change the color. Click the canvas to draw another square. Notice that the color has not changes. Try and fail a few more times. Contemplate why your new squares are not being drawn with a randomly colored fill. Solve the problem yourself =) (Hint: See section 6 of this lab.)
 
+Here's a final screenshot to keep you motivated:
+
+![Random Squares](final.png)
+
 > Notice how we haven't instructed you to put in any comments in your code. While we will no longer explicitly ask for comments in the lab instructions, we will be expecting you to properly comment the code that you submit for grading later. It is also a good idea to label chunks of code with comments that remind you about its functionality.
 
 ### (Bonus Material)
