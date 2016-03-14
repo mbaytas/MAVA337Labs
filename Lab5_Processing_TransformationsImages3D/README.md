@@ -44,7 +44,7 @@ Notice that **translation** here is used in the same way that you might use it i
 
 Notice that the [`translate()` function operates cumulatively](https://processing.org/reference/translate_.html), so the command `translate(600, 300 ,0);` will place the second enemy outside of the canvas. You need to figure out the *difference* between coordinates and use that.
 
-- Use the `box()` function to generate a cube, 30 pixels long on each side(the second enemy).
+- Use the `box()` function to generate a cube, 30 pixels long on each side (the second enemy).
 
 Run your code to verify that you are able to see a sphere and a cube on your screen:
 
@@ -60,22 +60,25 @@ The first method we will use to move shapes around the screen involves the `push
 
 It is quite important that you realize this: When we move things around in this fashion, calling functions like `translate()` or `rotate()`, we are manipulating the **coordinate system**, not the shapes themselves.
 
-We enclose the commands for applying transformations within `pushMatrix()` and `popMatrix()`, so that they are not added up to the global transformations that determine where the other objects will be located. The [tutorial on 2D Transformations on the Processing website](https://www.processing.org/tutorials/transform2d/) explains the details of this very well.
+When we enclose the commands for applying transformations within `pushMatrix()` and `popMatrix()`, they do not affect the global transformations that determine where the other objects will be located. The [tutorial on 2D Transformations on the Processing website](https://www.processing.org/tutorials/transform2d/) explains this very well.
 
-We want the cube to exhibit small amounts of random motion. For this, we need to generate small random numbers that will specify the amount of translation and rotation that our shapes will undergo. We also need some global variables to store the position of the **coordinate system** that relates to the cube.
+We want the cube to exhibit small amounts of random motion. For this, we need to generate small random numbers that will specify the amount of translation and rotation that our shapes will undergo. We also need some global variables to store the position of the **coordinate system** that relates to the cube, because we will be defining motion in terms of absolute coordinates (rather than relative distances).
 
 - Declare six global variables of type `float` called `cubeX`, `cubeY`, `cubeZ`, `cubeRotX`, `cubeRotY`, `cubeRotZ`.
 - Upon declaration, initialize `cubeX`to 600, `cubeY` to 300, and `cubeZ` to 0.
 - In `draw()`, declare and intialize three random `float`s between -5 and 5 called `cubeTransX` and `cubeTransY`. (Hint: use  `random(-5, 5);`)
 - Declare and initialize a random `float` between -1 and 1 called `cubeTransZ`.
 
-Now we have variables we'll use to store the magnitudes of the transformations we'll apply to our cube. Let's put them in action.
+Now we have variables for the magnitudes of the transformations we'll apply to our cube. Let's put them in action.
 
 - In `draw()`, after you generate three random variables that will determine the amount of motion for the cube, increment the variables `cubeX`, `cubeY` and `cubeZ` by the appropriate random numbers.
 - Increment `cubeRotX`, `cubeRotY` and `cubeRotZ` each by 0.1.
 - For now, delete the `translate()` function that determines the location of the sphere.
 - Move the `box()` function *before* where you set the location of the sphere and generate it.
-- Wrap the `box()` function that generates the cube with `pushMatrix()` and `popMatrix()` functions. Refer to the lecture notes and Processing documentation to understand what these do in detail.
+- Wrap the `box()` function that generates the cube within the `pushMatrix()` and `popMatrix()` functions.
+ 
+Make sure you refer to the lecture notes and Processing documentation to understand what the `pushMatrix()` and `popMatrix()` functions do in detail.
+
 - Use the `translate()` function after `pushMatrix()`, and before the `box()` command, to set the new location of the cube. Use the new, incremented `cubeX`, `cubeY` and `cubeZ` coordinates to determine the amount of translation in each axis.
 
 > All of these new features and functions (PShape, createShape, lights, etc.) may confuse you when you encounter them for the first time. To avoid confusion, whenever you encounter a new term that you haven't seen before, just look it up in the documentation. The [Reference](https://processing.org/reference/) section on Processing's website covers all of the features in the language. Here, you can find very detailed explanations on how functions like [PShape()](https://processing.org/reference/PShape.html), [createShape()](https://processing.org/reference/createShape_.html), [lights()](https://processing.org/reference/lights_.html), [translate()](https://processing.org/reference/translate_.html), etc. work. This is how professional computer programmers do their work. Compared to actually typing in code, programmers spend a lot more time looking at documentation and online communities (e.g. [Stack Overflow](http://stackoverflow.com/)).
@@ -107,6 +110,8 @@ Finally, we're back to `draw()` again.
 - Use the `rotateX()` function on the `enemySphere` to rotate it.
 
 Now you should see both of the enemy objects moving around randomly. Play around with the numbers to achieve the quality of animation you like. If you wish to constrain the random motion in any way, you can add some if statements.
+
+Notice how we have covered two different methods for animating objects. Both the quality of animation and the way that the code is written is different between the two methods. Both methods are useful for different purposes.
 
 ### 5) Textures
 
