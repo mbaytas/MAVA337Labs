@@ -91,9 +91,10 @@ Then, in `setup()`:
 
 Finally, we're back to `draw()` again.
 
-- Declare and intialize three random `float`s between -5 and 5 called `sphereTransX` and `sphereTransY`. Declare and initialize a random `float` between -1 and 1 called `sphereTransZ`.
+- Declare and intialize three random `float`s between -1 and 1 called `sphereTransX` and `sphereTransY`. Declare and initialize a random `float` between -1 and 1 called `sphereTransZ`.
 - Use the `shape()` function to place `enemySphere` onto your canvas, located at (250, 250).
 - Use the `translate()` function on the `enemySphare` object to move it by the amound specified by the `sphereTransX`, `sphereTransY` and `sphereTransZ` variables.
+- Use the `rotateX()` function on the `enemySphere` to rotate it.
 
 Now you should see both of the enemy objects moving around randomly. Play around with the numbers to achieve the quality of animation you like. If you wish to constrain the random motion in any way, you can add some if statements.
 
