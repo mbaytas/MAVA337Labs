@@ -73,7 +73,7 @@ Now we have variables for the magnitudes of the transformations we'll apply to o
 
 - In `draw()`, after you generate three random variables that will determine the amount of motion for the cube, increment the variables `cubeX`, `cubeY` and `cubeZ` by the appropriate random numbers.
 - Increment `cubeRotX`, `cubeRotY` and `cubeRotZ` each by 0.1.
-- For now, delete the `translate()` function that determines the location of the sphere.
+- For now, delete the `translate()` function that determines the location of the cube.
 - Move the `box()` function *before* where you set the location of the sphere and generate it.
 - Wrap the `box()` function that generates the cube within the `pushMatrix()` and `popMatrix()` functions.
  
