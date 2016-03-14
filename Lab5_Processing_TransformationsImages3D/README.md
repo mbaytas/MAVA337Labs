@@ -6,8 +6,8 @@ This lab relates to the second lecture on Processing, where transformations, ima
 
 ## Scenario
 
-Today we'll be working on the beginnings of a game where the player operates a fighter plane to combat evil spheres, cubes, and other abstract geometric shapes from outer space that are attacking earth.
-r
+Today we'll be working on the beginnings of a game where the player combatste evil spheres, cubes, and other abstract geometric shapes from outer space that are attacking earth.
+
 ### 1) Images
 
 Let's load up a background image first.
@@ -34,9 +34,15 @@ Let's draw some enemies!
 - We need to do some setup first: in your `draw()` function, use the `noStroke()` command to prevent Processing from drawing lines around each **polygon**.
 - In `draw()`, use the `lights()` command to initialize some default lights.
 - Use the `translate()` function to set the point where you will be inserting the first enemy. Use the coordinates `(200, 200, 0)`.
+
+Notice that **translation** here is used in the same way that you might use it in a physics or mechanics class. It denotes a kind of motion where a "body" is moved in one direction in its entirety, without eny rotation.
+
 - Use the `sphere()` function to generate a sphere of radius 20. This is our enemy #1, the evil alien sphere.
-- Use the `translate()` function again to set the point where you will be inserting the second enemy. Use the coordinates `(600, 300, 0)`. Notice that the [`translate()` function operates cumulatively](https://processing.org/reference/translate_.html), so the command `translate(600, 300 ,0);` will place the second enemy outside of the canvas. You need to figure out the *difference* between coordinates and use that.
-- Use the `box()` function to generate a cube, 30 pixels long on each side.
+- Use the `translate()` function again to set the point where you will be inserting the second enemy. Make the second enemy appear at coordinates `(600, 300, 0)`.
+
+Notice that the [`translate()` function operates cumulatively](https://processing.org/reference/translate_.html), so the command `translate(600, 300 ,0);` will place the second enemy outside of the canvas. You need to figure out the *difference* between coordinates and use that.
+
+- Use the `box()` function to generate a cube, 30 pixels long on each side(the second enemy).
 
 Run your code to verify that you are able to see a sphere and a cube on your screen:
 
@@ -100,7 +106,7 @@ Now you should see both of the enemy objects moving around randomly. Play around
 
 ### 5) Textures
 
-Our enemy shapes are looking a little bland. Let's apply some textures to the geometric shapes to finish off.
+Our enemy shapes are looking a little bland. Let's apply some **textures** to the geometric shapes to finish off for today.
 
 - Use [Google Images](https://images.google.com/) to find a texture you like. Make sure this image comes with the appropriate usage rights. You can also just download the `evilAlienRed.jpg` file in this repository.
 - Declare a global variable called `alienImg` of type `PImage`.
