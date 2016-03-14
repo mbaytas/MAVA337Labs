@@ -66,7 +66,7 @@ We want the cube to exhibit small amounts of random motion. For this, we need to
 
 - Declare six global variables of type `float` called `cubeX`, `cubeY`, `cubeZ`, `cubeRotX`, `cubeRotY`, `cubeRotZ`.
 - Upon declaration, initialize `cubeX`to 600, `cubeY` to 300, and `cubeZ` to 0.
-- In `draw()`, declare and intialize three random `float`s between -5 and 5 called `cubeTransX` and `cubeTransY`. (Hint: use  `random(-5, 5);`)
+- In `draw()`, declare and intialize two random `float`s between -2 and 2 called `cubeTransX` and `cubeTransY`. (Hint: use  `random(-2, 2);`)
 - Declare and initialize a random `float` between -1 and 1 called `cubeTransZ`.
 
 Now we have variables for the magnitudes of the transformations we'll apply to our cube. Let's put them in action.
