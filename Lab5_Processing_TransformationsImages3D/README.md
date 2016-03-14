@@ -13,19 +13,21 @@ Today we'll be working on the beginnings of a game where the player combatste ev
 Let's load up a background image first.
 
 - Set up a canvas of size 800x600 **pixels**. Use the P3D **renderer**.
+ 
+> Check out the [tutorial for P3D on the Processing website](https://processing.org/tutorials/p3d/) for detailed info about different renderers, why you would use them, how to use them, etc.
+
 - Declare the `PImage` variable that will hold your image file as a global variable, before the `setup()` function.
 - Use [Google Images](https://images.google.com/) to find a satellite map image of a place you like. Make sure this image is larger than 800x600 pixels and comes with the appropriate usage rights. You can also just download the `map.jpg` file in this repository.
 - Put the image inside your Processing sketch folder.
 - Load the image inside your `setup()` function using the `loadImage()` function.
 - **Resize** (**scale**) the image to be exactly 800 pixels in width and 600 pixels in height.
 - Use the `image()` function to put the image on your canvas. You can also use the `background()` function for this. The choice is yours.
+ 
+> [This tutorial](https://processing.org/examples/backgroundimage.html) demonstrates how to load a background image, using the `background()` function.
 
 Now you should be seeing your background image loaded up on the screen, when you run your code:
 
 ![Background](Run_Background.png)
-
-> Check out the [tutorial for P3D on the Processing website](https://processing.org/tutorials/p3d/) for detailed info about different renderers, why you would use them, how to use them, etc.
-> [This tutorial](https://processing.org/examples/backgroundimage.html) demonstrates a different way to load a background image, using the `background()` function.
 
 ### 2) Creating Shapes
 
