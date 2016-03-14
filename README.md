@@ -18,11 +18,11 @@ Throughout the texts, explanatory text that gives context to the instructions an
 
 ## The Labs
 
-- [Lab 1 (Java): Classes, Objects, Variables, Methods, Documentation](Lab1_Java_Essentials/)
-- [Lab 2 (Java): Conditions and Object Interactions](Lab2_Java_ConditionsInteractions)
-- [Lab 3 (Java): Loops and Arrays](Lab3_Java_LoopsArrays)
-- Lab 4 (Processing): TBA
-- Lab 5 (Processing): TBA
+- [Lab 1 (Java): Classes, Objects, Variables, Methods, Documentation](Lab1_Java_Essentials)
+- [Lab 2 (Java): Conditions, Object Interactions](Lab2_Java_ConditionsInteractions)
+- [Lab 3 (Java): Loops, Arrays](Lab3_Java_LoopsArrays)
+- [Lab 4 (Processing): Shapes, Colors, Mouse, Keyboard](Lab4_Processing_ShapesColorsMouseKeyboard)
+- [Lab 5 (Processing): Images, Transformations, 3D](Lab5_Processing_TransformationsImages3D)
 - Lab 6 (Processing): TBA
 - Lab 7 (Arduino): TBA
 - Lab 8 (Arduino): TBA
