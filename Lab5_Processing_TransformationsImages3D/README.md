@@ -103,7 +103,7 @@ We then need a global variable for our shape:
 Then, in `setup()`:
 
 - In `setup()`, use the `createShape()` function to initialize a sphere, 25 pixels in radius.
-- Use the `setStroke()` function on `enemySphere` to kill of the stroke around the sphere's polygons.
+- Use the `setStroke()` function on `enemySphere` to kill of the stroke around the sphere's polygons. (Hint: use `setStroke(false)`.)
 
 Finally, we're back to `draw()` again.
 
