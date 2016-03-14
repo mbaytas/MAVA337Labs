@@ -106,4 +106,6 @@ Our enemy shapes are looking a little bland. Let's apply some textures to the ge
 - In `setup()`, load the image.
 - In `setup()`, use the `setTexture()` function on `enemySphere` to apply the texture to the sphere.
 
+Run your code to verify that the texture is applied to the sphere:
 
+![Textured Sphere](Run_TexSphere)
