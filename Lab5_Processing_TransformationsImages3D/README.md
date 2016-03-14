@@ -108,4 +108,4 @@ Our enemy shapes are looking a little bland. Let's apply some textures to the ge
 
 Run your code to verify that the texture is applied to the sphere:
 
-![Textured Sphere](Run_TexSphere)
+![Textured Sphere](Run_TexSphere.png)
