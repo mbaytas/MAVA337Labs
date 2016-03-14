@@ -37,7 +37,7 @@ Let's draw some enemies!
 - In `draw()`, use the `lights()` command to initialize some default lights.
 - Use the `translate()` function to set the point where you will be inserting the first enemy. Use the coordinates `(200, 200, 0)`.
 
-Notice that **translation** here is used in the same way that you might use it in a physics or mechanics class. It denotes a kind of motion where a "body" is moved in one direction in its entirety, without eny rotation.
+Notice that **translation** here is used in the same way that you might use it in a physics or mechanics class. It denotes a kind of motion where a "body" is moved in one direction in its entirety, without any rotation.
 
 - Use the `sphere()` function to generate a sphere of radius 20. This is our enemy #1, the evil alien sphere.
 - Use the `translate()` function again to set the point where you will be inserting the second enemy. Make the second enemy appear at coordinates `(600, 300, 0)`.
@@ -58,7 +58,11 @@ Now that we have managed to produce the evil abstract geometric shapes from oute
 
 The first method we will use to move shapes around the screen involves the `pushMatrix()` and `popMatrix()` functions. We'll use this method to move the cube around.
 
-We want the cube to exhibit small amounts of random motion. For this, we need to generate small random numbers that will specify the amount of translation and rotation that our shapes will undergo. We also need some global variables to store the position of the coordinate system that relates to the cube.
+It is quite important that you realize this: When we move things around in this fashion, calling functions like `translate()` or `rotate()`, we are manipulating the **coordinate system**, not the shapes themselves.
+
+We enclose the commands for applying transformations within `pushMatrix()` and `popMatrix()`, so that they are not added up to the global transformations that determine where the other objects will be located. The [tutorial on 2D Transformations on the Processing website](https://www.processing.org/tutorials/transform2d/) explains the details of this very well.
+
+We want the cube to exhibit small amounts of random motion. For this, we need to generate small random numbers that will specify the amount of translation and rotation that our shapes will undergo. We also need some global variables to store the position of the **coordinate system** that relates to the cube.
 
 - Declare six global variables of type `float` called `cubeX`, `cubeY`, `cubeZ`, `cubeRotX`, `cubeRotY`, `cubeRotZ`.
 - Upon declaration, initialize `cubeX`to 600, `cubeY` to 300, and `cubeZ` to 0.
@@ -79,8 +83,6 @@ Now we have variables we'll use to store the magnitudes of the transformations w
 - Run your code to see that our little evil alien box is moving around in 3D space, while the sphere is stationary:
 
 ![Moving Box](Run_MovingBox.png)
-
-> Notice how the transformations applied within `pushMatrix()` and `popMatrix()` are not added up to the transformations that determine where the sphere is located. This is a result of using `pushMatrix()` and `popMatrix()`. For more information, see the [tutorial on 2D Transformations on the Processing website](https://www.processing.org/tutorials/transform2d/).
 
 ### 4) Moving Shapes, Pt. 2/2
 
