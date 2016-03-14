@@ -96,9 +96,12 @@ First, in `draw()`:
 - Delete or comment out the line of code where you translated the drawing reference point to (250, 250, 0).
 - Delete or comment out the line of code where you draw a sphere.
 
-Then, in `setup()`:
+We then need a global variable for our shape:
 
 - Declare a global variable of type `PShape` called `enemySphere`.
+
+Then, in `setup()`:
+
 - In `setup()`, use the `createShape()` function to initialize a sphere, 25 pixels in radius.
 - Use the `setStroke()` function on `enemySphere` to kill of the stroke around the sphere's polygons.
 
