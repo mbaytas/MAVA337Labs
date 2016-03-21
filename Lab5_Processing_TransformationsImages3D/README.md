@@ -1,6 +1,6 @@
 ### MAVA 337 Introduction to Programming for Design  (2016 Spring)
 
-# Lab 4: Transformations, Images, Textures and 3D in Processing
+# Lab 5: Transformations, Images, Textures & 3D in Processing
 
 This lab relates to the second lecture on Processing, where transformations, images, textures, and 3D graphics were covered. After this lab, you should be comfortable with these terms: **rendering**, **coordinate system**, **translation**, **rotation**, **scaling**, **filter**, **pixel**, **texture**, **polygon**.
 
@@ -13,7 +13,7 @@ Today we'll be working on the beginnings of a game where the player combatste ev
 Let's load up a background image first.
 
 - Set up a canvas of size 800x600 **pixels**. Use the P3D **renderer**.
- 
+
 > Check out the [tutorial for P3D on the Processing website](https://processing.org/tutorials/p3d/) for detailed info about different renderers, why you would use them, how to use them, etc.
 
 - Declare the `PImage` variable that will hold your image file as a global variable, before the `setup()` function.
@@ -22,7 +22,7 @@ Let's load up a background image first.
 - Load the image inside your `setup()` function using the `loadImage()` function.
 - **Resize** (**scale**) the image to be exactly 800 pixels in width and 600 pixels in height.
 - Use the `image()` function to put the image on your canvas. You can also use the `background()` function for this. The choice is yours.
- 
+
 > [This tutorial](https://processing.org/examples/backgroundimage.html) demonstrates how to load a background image, using the `background()` function.
 
 Now you should be seeing your background image loaded up on the screen, when you run your code:
@@ -76,7 +76,7 @@ Now we have variables for the magnitudes of the transformations we'll apply to o
 - For now, delete the `translate()` function that determines the location of the cube.
 - Move the `box()` function *before* where you set the location of the sphere and generate it.
 - Wrap the `box()` function that generates the cube within the `pushMatrix()` and `popMatrix()` functions.
- 
+
 Make sure you refer to the lecture notes and Processing documentation to understand what the `pushMatrix()` and `popMatrix()` functions do in detail.
 
 - Use the `translate()` function after `pushMatrix()`, and before the `box()` command, to set the new location of the cube. Use the new, incremented `cubeX`, `cubeY` and `cubeZ` coordinates to determine the amount of translation in each axis.
