@@ -23,7 +23,7 @@ Throughout the texts, explanatory text that gives context to the instructions an
 - [Lab 3 (Java): Loops, Arrays](Lab3_Java_LoopsArrays)
 - [Lab 4 (Processing): Shapes, Colors, Mouse, Keyboard](Lab4_Processing_ShapesColorsMouseKeyboard)
 - [Lab 5 (Processing): Images, Transformations, 3D](Lab5_Processing_TransformationsImages3D)
-- Lab 6 (Processing): TBA
+- [Lab 6 (Processing): Text, Sound, Video](Lab6_Processing_TextSoundVideo)
 - Lab 7 (Arduino): TBA
 - Lab 8 (Arduino): TBA
 - Lab 9 (Arduino): TBA
