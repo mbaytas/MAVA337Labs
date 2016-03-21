@@ -41,6 +41,9 @@ Recall that we used the `keyPressed()` function to capture keyboard events. We w
 
 Run your code to see that it works. Any keys you press on the keyboard should be showing on the screen.
 
+![Text Only](Run_TextOnly.png)
+
+
 ### 3) Sound
 
 Now we will have our application respond to certain keywords by playing sounds. Specifically, we'll have our program play the contents of an audio file whenever we type the word "music".
@@ -89,3 +92,7 @@ Finally, we need to insert a `movieEvent` function at the very end of our code t
     void movieEvent(Movie m) {
       m.read();
     }
+
+Run your code to see that it works. When you type in the word "video", the video should be showing on your screen. If you then type anything else, the movide will disappear.
+
+![Video](Run_Video.png)
