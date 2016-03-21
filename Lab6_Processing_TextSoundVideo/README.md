@@ -2,7 +2,7 @@
 
 # Lab 6: Text, Sound & Video in Processing
 
-This lab relates to the final lecture on Processing, where various aspects of text, sound, and video were covered. After this lab, you should be comfortable with these terms: **rendering**, **coordinate system**, **translation**, **rotation**, **scaling**, **filter**, **pixel**, **texture**, **polygon**.
+This lab relates to the final lecture on Processing, where various aspects of text, sound, and video were covered.
 
 ## Scenario
 
@@ -50,6 +50,10 @@ Now we will have our application respond to certain keywords by playing sounds. 
 - Declare a global variable of type `SoundFile` called `sf`.
 - In `setup()`, initialize `sf` and load up your sound file. (Hint: use the `new` keyword.) (Hint 2: This is also on the lecture slides.)
 
+Before we can actually work the code that loads a sound file, we need to add the sound file to our Processing project.
+
+- Use the `Add File...` command in the `Sketch` menu to add your sound file to the project.
+
 We'll put the rest of our code inside the `draw()` function. We'll check the last 5 characters that have been typed, and we'll play a soud if these characters form the word "music".
 
 - Add an if statement to check that the **length** of `letters` is at least 5; i.e. there are at least 5 characters in the string.
@@ -68,6 +72,7 @@ Run your program. Make sure that your sound plays when you type "music", and sto
 
 Simiar to what we've done with audio, we'll listen to keyboard events to trigger viewing a video. But first, we need to set things up:
 
+- Use the `Add File...` command in the `Sketch` menu to add your video file to the project.
 - Import the contents of the video library using the following statement at the beginning of your code: `import processing.video.*;`
 - Pick any video file you like, and place it into your Processing project folder. If you can't decide, you can use the video file in this repo.
 - Declare a global variable of type `Movie` called `mv`.
