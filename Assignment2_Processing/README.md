@@ -35,11 +35,15 @@ We will not be automatically checking your work for these. If you have put in th
 
 ### 1) Path Follower
 
-Draw the path and circle shown below on the canvas. Make the circle follow the path.
+Draw the circle shown below on the canvas. Make the circle follow the path. You don't have to draw the path itself.
 
-The animation can be as fast or as slow as you want.
+Basically the circle should begin from the top left corner of the screen, travel to the right, move down when it hits the edge, move to the left edge again, move down, and repeat. The animation can be as fast or as slow as you want.
+
+You can implement this in reasonably few lines of code using some basic, garden variety [`if` statements](https://processing.org/reference/if.html), [`for` loops](https://processing.org/reference/for.html), etc. You can also access the canvas dimensions using the [`width`](https://processing.org/reference/width.html) and [`height`](https://processing.org/reference/height.html) system variables.
 
 You must specify some colors for the background, the path, and the circle; but they don't have to be the colors shown. Feel free to use different colors.
+
+Hint: You can use the [`PShape` class](https://processing.org/reference/PShape.html) and its [`translate()` method](https://processing.org/reference/PShape_translate_.html) to move the circle around. You can also use the [static `translate()` function](https://processing.org/reference/translate_.html).
 
 ![Follower](Follower.png)
 
