@@ -18,7 +18,7 @@ Remember that you can rely on any resources, including any sinippets code you fi
 
 Name the project directory `1_Java_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
 
-Due 23:59 on March 30, 2016.
+Due 23:59 on April 6, 2016.
 
 ### Grading Rubric
 
