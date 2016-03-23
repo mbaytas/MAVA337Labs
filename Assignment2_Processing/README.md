@@ -22,10 +22,13 @@ Due 23:59 on April 6, 2016.
 
 ### Grading Rubric
 
--
--
--
--
+- Working code for Part 1: 5 points
+- Working code for Part 2: 4 points
+- Working code for Part 3: 5 points
+- Working code for Part 4: 5 points
+- Comments on classes, methods, and reasonable chunks of code explaining what they do: 2 points
+- Properly indented code: 2 points
+- Observing naming conventions (same as Java for function, variable, class, etc. names): 2 point
 
 These add up to 25 points, which represents 25% of your final grade from this course.
 
@@ -37,7 +40,7 @@ We will not be automatically checking your work for these. If you have put in th
 
 Draw the circle shown below on the canvas. Make the circle follow the path. You don't have to draw the path itself.
 
-Basically the circle should begin from the top left corner of the screen, travel to the right, move down when it hits the edge, move to the left edge again, move down, and repeat. The animation can be as fast or as slow as you want.
+Basically the circle should begin from the top left corner of the screen, travel to the right, move down when it hits the edge, move to the left edge again, move down, and repeat. The animation can be as fast or as slow as you want, but we should be able to observe the circle move (not too fast!). Also, the vertical and horizontal movement must occur at the same speed.. When you arrive at the bottom corner, do whatever you want (stop, loop, make the circle explode and scatter confetti...)
 
 You can implement this in reasonably few lines of code using some basic, garden variety [`if` statements](https://processing.org/reference/if.html), [`for` loops](https://processing.org/reference/for.html), etc. You can also access the canvas dimensions using the [`width`](https://processing.org/reference/width.html) and [`height`](https://processing.org/reference/height.html) system variables.
 
