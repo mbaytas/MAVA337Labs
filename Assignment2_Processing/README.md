@@ -91,6 +91,8 @@ Hints:
 
 Grab Richard Feynman's photo from below.
 
-Traverse the image pixel by pixel and apply a creative effect. You can turn the image grayscale or black & white, make certain colors "pop," invert it, or do more complicated operations like convolution.
-
 ![Richard Feynman](Feynman.jpg)
+
+Traverse the image pixel by pixel and apply a thresholding effect. (More info coming soon.)
+
+
