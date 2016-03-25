@@ -93,6 +93,19 @@ Grab Richard Feynman's photo from below.
 
 ![Richard Feynman](Feynman.jpg)
 
-Traverse the image pixel by pixel and apply a thresholding effect. (More info coming soon.)
+Traverse the image pixel by pixel and apply a thresholding effect.
 
+Some tips:
+
+- You will need to use the [`PImage` class](https://processing.org/reference/PImage.html).
+- You probably don't need to write a `draw()` function, you can handle everything within `setup()`.
+- Check the dimensions of the original image. Set your canvas size to those dimensions.
+- We used the HSB [color mode](https://processing.org/reference/colorMode_.html). In HSB, you can represent the [color](https://processing.org/reference/color_.html) white as `(0, 0, 255)` and black as `(0, 0, 0)`.
+- Most probably you will need to read the documentation and use the following: The [`loadPixels()` function](https://processing.org/reference/loadPixels_.html), the [`pixels` array](https://processing.org/reference/pixels.html), the [`brightness()` function](https://processing.org/reference/brightness_.html), and the [`color()` function](https://processing.org/reference/color_.html).
+
+> The code we wrote to produce the examples below is 28 lines, of which 11 contain only spaces or curly brackets. Around 15-20 instructions should be enough to finish this exercise if you study the documentation and use the functions etc. we suggest above.
+
+Below are two examples we have done. The image on the left, with more white than black, is the result of using a brightness threshold of 100. The image on the right, which is darker, was produced with a brightness threshold at 200.
+
+![Thresholding Example](Threshold.png)
 
