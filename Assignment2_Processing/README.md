@@ -16,7 +16,7 @@ Remember that you can rely on any resources, including any sinippets code you fi
 
 ### Submission Instructions
 
-Name the project directory `1_Java_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
+There are four parts to the assignment. For each part, create a new Processing project with its own directory. Put all four project directories inside a directory called `2_Processing_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
 
 Due 23:59 on April 6, 2016.
 
@@ -28,7 +28,7 @@ Due 23:59 on April 6, 2016.
 - Working code for Part 4: 5 points
 - Comments on classes, methods, and reasonable chunks of code explaining what they do: 2 points
 - Properly indented code: 2 points
-- Observing naming conventions (same as Java for function, variable, class, etc. names): 2 point
+- Observing naming conventions (same as Java for function, variable, class, etc. names): 2 points
 
 These add up to 25 points, which represents 25% of your final grade from this course.
 
@@ -42,24 +42,28 @@ Draw the circle shown below on the canvas. Make the circle follow the path. You 
 
 Basically the circle should begin from the top left corner of the screen, travel to the right, move down when it hits the edge, move to the left edge again, move down, and repeat. The animation can be as fast or as slow as you want, but we should be able to observe the circle move (not too fast!). Also, the vertical and horizontal movement must occur at the same speed.. When you arrive at the bottom corner, do whatever you want (stop, loop, make the circle explode and scatter confetti...)
 
-You can implement this in reasonably few lines of code using some basic, garden variety [`if` statements](https://processing.org/reference/if.html), [`for` loops](https://processing.org/reference/for.html), etc. You can also access the canvas dimensions using the [`width`](https://processing.org/reference/width.html) and [`height`](https://processing.org/reference/height.html) system variables.
+You can implement this in reasonably few lines of code using some basic, garden variety [`if` statements](https://processing.org/reference/if.html), [`for` loops](https://processing.org/reference/for.html), etc.
 
-You must specify some colors for the background, the path, and the circle; but they don't have to be the colors shown. Feel free to use different colors.
+Remember that you can access the canvas dimensions using the [`width`](https://processing.org/reference/width.html) and [`height`](https://processing.org/reference/height.html) system variables.
 
-Hint: You can use the [`PShape` class](https://processing.org/reference/PShape.html) and its [`translate()` method](https://processing.org/reference/PShape_translate_.html) to move the circle around. You can also use the [static `translate()` function](https://processing.org/reference/translate_.html).
+You must specify some colors for the [background](https://processing.org/reference/background_.html) and the [circle](https://processing.org/reference/fill_.html); but they don't have to be the colors shown. Feel free to use different colors.
+
+Hint: You can use the [`PShape` class](https://processing.org/reference/PShape.html) and its [`translate()` method](https://processing.org/reference/PShape_translate_.html) to move the circle around. You can also use the [static `translate()` function](https://processing.org/reference/translate_.html) which moves the whole coordinate system around.
 
 ![Follower](Follower.png)
 
 ### 2) Rotating Text
 
-Write "MAVA337" in a monospaced font in the middle of the screen and rotate it around the y-axis.
+Write "MAVA337" in a [monospaced font](https://en.wikipedia.org/wiki/Monospaced_font) right in the middle of the screen and rotate it around the y-axis.
 
 Hints:
 
-- Before you pick the font for your text (with `createFont()`), use the `Pfont.list()` function to obtain a list of the fonts available on your system.
+- Before you pick the font for your text (with [`createFont()`](https://processing.org/reference/createFont_.html)), use the [`Pfont.list()`](https://processing.org/reference/PFont_list_.html) function to obtain a list of the fonts available on your system.
 - You may want to use the [`textAlign()` function](https://processing.org/reference/textAlign_.html).
-- If you use the parameters for the `text()` function to set the position of your text, the text will rotate around an axis that is located off the text. Use `translate()` instead.
+- If you use the parameters for the [`text()`](https://processing.org/reference/text_.html) function to set the position of your text, the text will rotate around an axis that is located off the text. Use [`translate()`]((https://processing.org/reference/translate_.html)) instead, to revolve the text around the middle.
 - You will need to use a global variable for the rotation angle.
+ 
+> The code we wrote to produce the example screenshots below is 22 lines, of which 6 contain only spaces or curly brackets. Around 15-20 instructions should be enough to finish this exercise if you study the documentation and use the functions etc. we suggest above.
 
 ![Rotating Text](Rotate.png)
 
@@ -77,15 +81,15 @@ Find an image depicting space and set this as your background. Use the [`PImage`
 
 Find images depicting fire, water, and soil. [Draw three spheres](https://processing.org/reference/createShape_.html), 50 pixels in radius. [Apply the images onto the spheres as textures](https://processing.org/tutorials/p3d/). [Turn off the stroke](https://processing.org/reference/PShape_setStroke_.html) on the spheres.
 
-Use a global variable called `rotator` of type `Float` that initializes at 0. Increment it by 1 at the end of each `draw()` iteration. [Rotate the whole coordinate system around the Z-axis](https://processing.org/reference/rotateZ_.html) by 1/100th of the value of `rotator`. Do this after you set the background and lights, *before* you draw the spheres.
+Use a global variable called `rotator` of type `Float` that initializes at 0. Increment it by 1 at the end of each `draw()` iteration. [Rotate the whole coordinate system around the Z-axis](https://processing.org/reference/rotateZ_.html) by 1/100th of the value of `rotator`. (Or increment it by 0.01 on each iteration, and don't worry about the calculation.) Do this after you set the background and lights, *before* you draw the spheres.
 
-Place the shapes at (X,Y) coordinate pairs (100, 100), (-100, 100), and (-100, -100).
+Initially, place the shapes at (X,Y) coordinate pairs (100, 100), (-100, 100), and (-100, -100).
 
 Rotate all three spheres around their own center by small values. We used the `rotateX()`, `rotateY()`, and `rotateZ()` functions and just randomly gave values around 0.01.
+ 
+> The code we wrote to produce the example video is 65 lines, of which 20 contain only spaces or curly brackets. Around 40-50 instructions should be enough to finish this part if you study the documentation and use the functions etc. we suggest above. The reason why this part requires more code than the others is that there are 3 objects to move, rather than 1. Many instructions are repeated 3 times, for the 3 spheres.
 
-Hints:
-
-- Use the "usage rights" filter in Google Images to find images that is appropriate for "reuse with modification." (In general this is a good habit for when you need a few quick images for a project.)
+> Use the "usage rights" filter in Google Images to find images that is appropriate for "reuse with modification." (In general this is a good habit for when you need a few quick images for a project.)
 
 ### 4) Image
 
@@ -103,7 +107,7 @@ Some tips:
 - We used the HSB [color mode](https://processing.org/reference/colorMode_.html). In HSB, you can represent the [color](https://processing.org/reference/color_.html) white as `(0, 0, 255)` and black as `(0, 0, 0)`.
 - Most probably you will need to read the documentation and use the following: The [`loadPixels()` function](https://processing.org/reference/loadPixels_.html), the [`pixels` array](https://processing.org/reference/pixels.html), the [`brightness()` function](https://processing.org/reference/brightness_.html), and the [`color()` function](https://processing.org/reference/color_.html).
 
-> The code we wrote to produce the examples below is 28 lines, of which 11 contain only spaces or curly brackets. Around 15-20 instructions should be enough to finish this exercise if you study the documentation and use the functions etc. we suggest above.
+> The code we wrote to produce the examples below is 28 lines, of which 11 contain only spaces or curly brackets. Around 15-20 instructions should be enough to finish this part if you study the documentation and use the functions etc. we suggest above.
 
 Below are two examples we have done. The image on the left, with more white than black, is the result of using a brightness threshold of 100. The image on the right, which is darker, was produced with a brightness threshold at 200.
 
