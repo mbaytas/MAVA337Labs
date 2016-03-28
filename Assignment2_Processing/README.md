@@ -16,7 +16,7 @@ Remember that you can rely on any resources, including any sinippets code you fi
 
 ### Submission Instructions
 
-There are four parts to the assignment. For each part, create a new Processing project with its own directory. Put all four project directories inside a directory called `2_Processing_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
+There are four parts to the assignment. For each part, create a new Processing project with its own directory. Call them `PathFollower`, `RotatingText`, `Textures`, and `ImageThresholding`. Put all four project directories inside a directory called `2_Processing_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
 
 Due 23:59 on April 6, 2016.
 
@@ -91,7 +91,7 @@ Rotate all three spheres around their own center by small values. We used the `r
 
 > Use the "usage rights" filter in Google Images to find images that is appropriate for "reuse with modification." (In general this is a good habit for when you need a few quick images for a project.)
 
-### 4) Image
+### 4) Image Thresholding
 
 Grab Richard Feynman's photo from below.
 
