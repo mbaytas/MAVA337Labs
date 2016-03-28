@@ -89,6 +89,7 @@ Rotate all three spheres around their own center by small values. We used the `r
  
 > The code we wrote to produce the example video is 65 lines, of which 20 contain only spaces or curly brackets. Around 40-50 instructions should be enough to finish this part if you study the documentation and use the functions etc. we suggest above. The reason why this part requires more code than the others is that there are 3 objects to move, rather than 1. Many instructions are repeated 3 times, for the 3 spheres.
 
+
 > Use the "usage rights" filter in Google Images to find images that is appropriate for "reuse with modification." (In general this is a good habit for when you need a few quick images for a project.)
 
 ### 4) Image Thresholding
