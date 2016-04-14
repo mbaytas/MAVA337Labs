@@ -46,3 +46,4 @@ We are hoping that you already have the Arduino IDE up and running on your compu
 - Run the code and make sure that it works as intended.
 - Add three LEDs to your circuit, on pins 11, 12, and 13.
 - Now you will build an LED "level indicator" for your potentiometer reading. `analogRead()` returns a value in the range [0, 1023]. Add some code so that none of the LEDs are lit if this value in the range [0, 255]; one LED is lit if the value is in the range [256, 511]; two LEDs are lit if the value is in [512, 767], and all three LEDs are lit if the value is equal to or greater than 768.
+- Also print a message through serial saying how many LEDs are lit. 
