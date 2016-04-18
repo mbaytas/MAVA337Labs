@@ -42,11 +42,10 @@ Your progress report will be graded not only based on its existence and format, 
 
 **Deadline: 17 May, 2016** ::: *18 Points*
 
-The following is a breakdown of the 18-point "Project Submission + Demo" portion of the points for this assignment:
+The following is a breakdown of the 18 points you can receive for your work on this stage of the assignment:
 
 - Properly styled, commented, and working code ::: *5 Points*
 - Novel concept that integrates learning throughout the course ::: *5 Points*
 - Working application ::: *8 Marks*
 
 Put the project inside a directory called `4_3_Final_YourName`. Compress it into a .zip file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
-
