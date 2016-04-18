@@ -2,7 +2,7 @@
 
 # Final Project Assignment
 
-This homework assignment concludes the course, and integrates two of the tools you acquired throughout the term: **Processing** and **Arduino**. We will collect and grade your work. The grading rubric is given below.
+This homework assignment concludes the course. You will be using one of the tools you acquired throughout the term: **Processing**. We will collect and grade your work. The grading rubric is given below.
 
 Feel free to consult any course materials or outside sources. Feel free to use code you have written before.
 
@@ -26,31 +26,4 @@ Due 23:59 on May 18, 2016.
 
 These add up to 25 points, which represents 25% of your final grade from this course.
 
-## Scenario
 
-Using Arduino and Processing, you will be building a small prototype of a digital music player with a dedicated hardware controller.
-
-### Bill of Materials
-
-- 1x Arduino Uno
-- 1x USB cable
-- 1x breadboard
-- Jumper wires
-- 3x LEDs
-- 3x 220 ohm resistors
-- 1x rotary potentiometer
-- 3x MP3 audio files
-
-### Part 1: Processing
-
-We'll begin by building a music player in Processing.
-
-- Add your three MP3 files to the Processing project.
-- Create canvas for the user interface (UI), sized 800x600 pixels.
-- Create three buttons for the **Play/Pause**, **Rewind**, and **Fast-Forward** functions. The shape and size of the buttons are up to you. When clicked, the **Play/Pause** button should start or pause the audio, and the other two buttons should switch between audio files.
-- Indicate the name of the currently playing sound file on the UI with [text](https://processing.org/reference/text_.html). Make sure this text updates when you change the file that is playing.
-- Indicate the volume level with text, numbers, or any UI widget of your liking.
-- 
-### Part 2: Arduino
-
-### Part 3: Integration
