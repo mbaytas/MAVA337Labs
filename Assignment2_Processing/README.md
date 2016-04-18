@@ -32,10 +32,6 @@ Due 23:59 on April 6, 2016.
 
 These add up to 25 points, which represents 25% of your final grade from this course.
 
-#### Bonus points:
-
-We will not be automatically checking your work for these. If you have put in the effort to get these bonus points, please tell us in the e-mail as you submit your work.
-
 ### 1) Path Follower
 
 Draw the circle shown below on the canvas. Make the circle follow the path. You don't have to draw the path itself.
@@ -62,7 +58,7 @@ Hints:
 - You may want to use the [`textAlign()` function](https://processing.org/reference/textAlign_.html).
 - If you use the parameters for the [`text()`](https://processing.org/reference/text_.html) function to set the position of your text, the text will rotate around an axis that is located off the text. Use [`translate()`]((https://processing.org/reference/translate_.html)) instead, to revolve the text around the middle.
 - You will need to use a global variable for the rotation angle.
- 
+
 > The code we wrote to produce the example screenshots below is 22 lines, of which 6 contain only spaces or curly brackets. Around 15-20 instructions should be enough to finish this exercise if you study the documentation and use the functions etc. we suggest above.
 
 ![Rotating Text](Rotate.png)
@@ -86,7 +82,7 @@ Use a global variable called `rotator` of type `Float` that initializes at 0. In
 Initially, place the shapes at (X,Y) coordinate pairs (100, 100), (-100, 100), and (-100, -100).
 
 Rotate all three spheres around their own center by small values. We used the `rotateX()`, `rotateY()`, and `rotateZ()` functions and just randomly gave values around 0.01.
- 
+
 > The code we wrote to produce the example video is 65 lines, of which 20 contain only spaces or curly brackets. Around 40-50 instructions should be enough to finish this part if you study the documentation and use the functions etc. we suggest above. The reason why this part requires more code than the others is that there are 3 objects to move, rather than 1. Many instructions are repeated 3 times, for the 3 spheres.
 
 
