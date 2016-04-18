@@ -33,7 +33,7 @@ Throughout the texts, explanatory text that gives context to the instructions an
 - [Homework Assignment 1: Java](Assignment1_Java)
 - [Homework Assignment 2: Processing](Assignment2_Processing)
 - Homework Assignment 3: Arduino
-- Final Homework Assignment
+- [Final Homework Assignment](Assignment_Final)
 
 ## (Bonus Material)
 
