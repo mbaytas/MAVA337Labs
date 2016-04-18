@@ -18,12 +18,14 @@ Put all four project directories inside a directory called `4_Final_YourName`. C
 
 Due 23:59 on May 18, 2016.
 
-### Grading Rubric
+### Deadlines and Grading Rubric
 
-- Comments on classes, methods, and reasonable chunks of code explaining what they do: 1 points
-- Properly indented code: 1 points
-- Good style (properly capitalized variable names, etc.): 1 points
+- 25 April, 2016 ::: Project Plan + Initial Concept (max. 1 page PDF e-mailed to instructor) ::: *2 Points*
+- 4 May, 2016: Project Progress Report (max. 1 page PDF e-mailed to instructor) ::: *5 Points*
+- 18 May, 2016: Project Submission + Demo ::: *18 Points*
 
-These add up to 25 points, which represents 25% of your final grade from this course.
+The following is a breakdown of the 18-point "Project Submission + Demo" portion of the points for this assignment:
 
-
+- Properly styled, commented, and working code ::: *5 Points*
+- Novel concept that integrates learning throughout the course ::: *5 Points*
+- Working prototype ::: *8 Marks*
