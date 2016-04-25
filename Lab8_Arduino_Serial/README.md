@@ -8,7 +8,7 @@ This lab relates to the second lecture on Arduino, where interfacing Arduino wit
 
 Today we'll be building some traffic lights. [Traffic lights](https://en.wikipedia.org/wiki/Traffic_light) in this day and age are usually automated, but they do have manual override capabilities, for emergencies etc. We'll be building a manually operated version today.
 
-### Hardware Required
+### Materials
 
 - 1x Arduino Uno
 - 1x button
