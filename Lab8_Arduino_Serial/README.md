@@ -13,7 +13,7 @@ Today we'll be building some traffic lights. [Traffic lights](https://en.wikiped
 - 1x Arduino Uno
 - 1x button
 - 1x 10k ohm resistor
-- 1x Breadboard
+- 1x breadboard
 - Jumper wires
 
 ### 1) Circuit Setup
