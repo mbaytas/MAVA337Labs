@@ -20,6 +20,10 @@ Today we'll be building some traffic lights. [Traffic lights](https://en.wikiped
 
 - Consult to the [*DigitalReadSerial* tutorial on the Arduino website](http://www.arduino.cc/en/Tutorial/DigitalReadSerial) to build the circuit to capture button presses.
 
+For convenience, the diagram on the tutorial page is included below:
+
+![](http://www.arduino.cc/en/uploads/Tutorial/button.png)
+
 ### 1) Arduino Side
 
 - Consult to last week's lecture slides and example code (as well as the [*DigitalReadSerial* tutorial on the Arduino website](http://www.arduino.cc/en/Tutorial/DigitalReadSerial)) to write the Arduino code that writes the state of the button to the computer.
