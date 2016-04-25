@@ -64,4 +64,4 @@ Refer to the lecture slides and our [Arduino+Processing Lab](https://github.com/
 - Write a Processing sketch that displays a colored rectangle on a gray background.
 - Add code to your Processing sketch that reads the serial port where the Arduino is connected, and changes the the fill color of the rectangle depending on which LED is lit. If the LED on pin 11 is lit (`1` coming in from the serial port), make the rectangle red. For the LED on pin 12 (`2` from serial), make the rectangle green. For the LED on pin 13, (`3` from serial) make the rectangle yellow.
 
-### 4) More Arduino
+> Remember that the state of the physical LEDs and the indicator on your screen should both change automatically every 3 seconds, and also when the button is pressed.
