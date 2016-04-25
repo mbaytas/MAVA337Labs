@@ -1,6 +1,6 @@
 ### MAVA 337 Introduction to Programming for Design  (2016 Spring)
 
-# Lab 7: Arduino Essentials: Digital Write, Digital Read, Analog Read
+# Lab 7: Arduino Essentials - Digital Write, Digital Read, Analog Read
 
 This lab relates to the first lecture on Arduino, where some background and introductory information about the development board, some basic electronics concepts, and three essential operations (Digital Write, Digital Read, Analog Read) were covered.
 
