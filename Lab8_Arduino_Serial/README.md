@@ -24,6 +24,10 @@ For convenience, the diagram on the tutorial page is included below:
 
 ![](http://www.arduino.cc/en/uploads/Tutorial/button.png)
 
+> The pinout for the buttons that you have may be a little different from what's on the diagram. You'll discover the correct pinout through trial and error.
+
+> You don't really need to connect the top and bottom power rails together in this particular case.
+
 ### 1) Arduino Side
 
 - Consult to last week's lecture slides and example code (as well as the [*DigitalReadSerial* tutorial on the Arduino website](http://www.arduino.cc/en/Tutorial/DigitalReadSerial)) to write the Arduino code that writes the state of the button to the computer.
