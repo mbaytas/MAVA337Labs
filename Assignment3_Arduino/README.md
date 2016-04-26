@@ -14,7 +14,7 @@ Remember that you can rely on any resources, including any sinippets code you fi
 
 ### Submission Instructions
 
-Put both the Arduino and Processing sketch directories inside a directory called `3_Arduino_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
+Put both the Arduino project directory inside a directory called `3_Arduino_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
 
 Due 23:59 on May 5, 2016.
 
@@ -23,7 +23,7 @@ Due 23:59 on May 5, 2016.
 - Arduino code for cycling through 
 - Comments on classes, methods, and reasonable chunks of code explaining what they do: 2 points
 - Properly indented code: 1 points
-- Good style (properly capitalized variable names, etc.): 1 points
+- Good style (properly capitalized variable names, etc.): 2 points
 
 These add up to 25 points, which represents 25% of your final grade from this course.
 
@@ -56,12 +56,3 @@ Refer to the lecture slides; our [Arduino Essentials Lab](https://github.com/mba
 
 - Add code to your sketch that listens to the button. When the button is pressed, immediately cycle to the next LED; i.e. turn off the LED that is lit at the time of the button press, and light up the next one.
 - Add code to your sketch that opens up a serial communication port and prints the number of the LED that is lit when the LED state changes. When the LED on pin 11 is lit, write `1` to serial; when the LED on pin 12 is lit, write `2`; and when the LED on pin 13 is lit, write `3`.
-
-### 3) Processing
-
-Refer to the lecture slides and our [Arduino+Processing Lab](https://github.com/mbaytas/MAVA337Labs/tree/master/Lab8_Arduino_Serial).
-
-- Write a Processing sketch that displays a colored rectangle on a gray background.
-- Add code to your Processing sketch that reads the serial port where the Arduino is connected, and changes the the fill color of the rectangle depending on which LED is lit. If the LED on pin 11 is lit (`1` coming in from the serial port), make the rectangle red. For the LED on pin 12 (`2` from serial), make the rectangle green. For the LED on pin 13, (`3` from serial) make the rectangle yellow.
-
-> Remember that the state of the physical LEDs and the indicator on your screen should both change automatically every 3 seconds, and also when the button is pressed.
