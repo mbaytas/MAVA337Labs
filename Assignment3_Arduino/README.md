@@ -14,18 +14,28 @@ Remember that you can rely on any resources, including any sinippets code you fi
 
 ### Submission Instructions
 
-Put both the Arduino project directory inside a directory called `3_Arduino_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
+For this assignment, eventually we will have to physically meet up with you and collect the equipment that we handed out. Thus, this time, we will be asking for a physical demonstration of your work. Please bring the circuit, assembled and running, to the class on May 9. Since you are uploading your sketch to the board, the circuit should start working upon connecting it to a power supply or USB port.
 
-Due 23:59 on May 5, 2016.
+Additionally, put the Arduino project directory inside a directory called `3_Arduino_YourName`. Compress it into a `.zip` file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
+
+Due 16:00 on May 9, 2016.
 
 ### Grading Rubric
 
-- Arduino code for cycling through 
+- Correct circuit setup: 5 points
+- Arduino code for cycling through LEDs: 10 points
+- Arduino code for changing lights on button press: 5 points
 - Comments on classes, methods, and reasonable chunks of code explaining what they do: 2 points
 - Properly indented code: 1 points
 - Good style (properly capitalized variable names, etc.): 2 points
 
 These add up to 25 points, which represents 25% of your final grade from this course.
+
+### Bonus Points
+
+Notice that, probably, if you press the button for too long or if you hold it down, the lights will start to cycle very rapidly. If you can write code that changes the lights only once, regardless of how long the button is pressed, you get an extra 3 points.
+
+> In other words, after the button is pressed once and the first `HIGH` value is read on the button pin, ignore all subsequent `HIGH` value until a `LOW` value is read.
 
 ## Scenario
 
@@ -45,14 +55,17 @@ For this assignment, you will be building some traffic lights. Traffic lights in
 
 Refer to the lecture slides; our [Arduino Essentials Lab](https://github.com/mbaytas/MAVA337Labs/tree/master/Lab7_Arduino_Essentials); and the [*Blink*](https://www.arduino.cc/en/Tutorial/Blink) and [*DigitalReadSerial*](httpshttps://www.arduino.cc/en/Tutorial/DigitalReadSerial) examples.
 
-- Connect the button to Arduino's digital pin 2. Remember to use the 10k ohm resistor.
-- Connect the 3 LEDs to Arduino's digital pins 11, 12, and 13. Remember to use the 220 ohm resistors, and remember that LEDs have **polarity**. If you connect your LEDs the wrong way, they will not work. If you omit the resistors, ***you may kill your LEDs***.
+- Connect the button to Arduino's digital pin 3. Remember to use the 10k ohm resistor.
+- Connect the 3 LEDs to Arduino's digital pins 10, 11, and 12. Remember to use the 220 ohm resistors, and remember that LEDs have **polarity**. If you connect your LEDs the wrong way, they will not work. If you omit the resistors, ***you may kill your LEDs***.
+
+Your circuit will look like the following:
+
+![](http://arduino.sundh.com/wp-content/uploads/2012/11/arduino_sundh_random_leds1.png)
 
 ### 2) Arduino
 
-- Write an Arduino sketch that cycles through the 3 LEDs, lighting up one at a time and keeping each LED lit for 3 seconds before switching to the next one. More explicitly, your program should do the following: Light up LED on pin 11, wait for 3 seconds, turn off LED on pin 11; light up LED on pin 12, wait for 3 seconds, turn off LED on pin 12; light up LED on pin 13, wait for 3 seconds, turn off LED on pin 13.
+- Write an Arduino sketch that cycles through the 3 LEDs, lighting up one at a time and keeping each LED lit for 3 seconds before switching to the next one. More explicitly, your program should do the following: Light up LED on pin 10, wait for 3 seconds, turn off LED on pin 10; light up LED on pin 11, wait for 3 seconds, turn off LED on pin 11; light up LED on pin 12, wait for 3 seconds, turn off LED on pin 12; repeat.
  
 > Don't worry about the colors of your LEDs. Only the order is important.
 
 - Add code to your sketch that listens to the button. When the button is pressed, immediately cycle to the next LED; i.e. turn off the LED that is lit at the time of the button press, and light up the next one.
-- Add code to your sketch that opens up a serial communication port and prints the number of the LED that is lit when the LED state changes. When the LED on pin 11 is lit, write `1` to serial; when the LED on pin 12 is lit, write `2`; and when the LED on pin 13 is lit, write `3`.
