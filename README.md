@@ -26,13 +26,12 @@ Throughout the texts, explanatory text that gives context to the instructions an
 - [Lab 6 (Processing): Text, Sound, Video](Lab6_Processing_TextSoundVideo)
 - [Lab 7 (Arduino): Digital Write, Digital Read, Analog Read](Lab7_Arduino_Essentials)
 - [Lab 8 (Arduino): Arduino + Processing via Serial Communication](Lab8_Arduino_Serial)
-- Lab 9 (Arduino): TBA
 
 ## The Homework Assignments
 
 - [Homework Assignment 1: Java](Assignment1_Java)
 - [Homework Assignment 2: Processing](Assignment2_Processing)
-- Homework Assignment 3: Arduino
+- [Homework Assignment 3: Arduino](Assignment3_Arduino)
 - [Final Homework Assignment](Assignment_Final)
 
 ## (Bonus Material)
