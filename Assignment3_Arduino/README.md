@@ -33,9 +33,11 @@ These add up to 25 points, which represents 25% of your final grade from this co
 
 ### Bonus Points
 
-Notice that, probably, if you press the button for too long or if you hold it down, the lights will start to cycle very rapidly. If you can write code that changes the lights only once, regardless of how long the button is pressed, you get an extra 3 points.
+Notice that, probably, you will need to hold the button down for a while to engage the "all three LEDs blinking for 0.2 seconds" mode, because the moment when one LED switches off and the other switches on will be the only moment when the button signal is being read.
 
-> In other words, after the button is pressed once and the first `HIGH` value is read on the button pin, ignore all subsequent `HIGH` value until a `LOW` value is read.
+If you can use an [interrupt](http://playground.arduino.cc/Code/Interrupts) to make the system respond immediately to a button press (rather than waiting for the moment when the LEDs cycle), your get 3 bonus points.
+
+> Notice that this task will require you to consult to external resources not taught in the course.
 
 ## Scenario
 
@@ -68,4 +70,6 @@ Your circuit will look like the following:
  
 > Don't worry about the colors of your LEDs. Only the order is important.
 
-- Add code to your sketch that listens to the button. When the button is pressed, immediately cycle to the next LED; i.e. turn off the LED that is lit at the time of the button press, and light up the next one.
+- Add code to your sketch that listens to the button. When the button is pressed and held down, make all three LEDs blink at once. All three LEDs should light up for 0.2 seconds, turn off for 0.2 seconds, and repeat; while the button is held down. When the button is released, resume normal operation. (You can resume from where you left in the cycle, or begin the cycle anew, both are OK.)
+
+> You will need to hold down the button, because (probably) the moment when one LED switches off and the other switches on will be the only moment when the button signal is being read.
