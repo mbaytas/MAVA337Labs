@@ -48,6 +48,7 @@ Run your code to see that it works. Any keys you press on the keyboard should be
 
 Now we will have our application respond to certain keywords by playing sounds. Specifically, we'll have our program play the contents of an audio file whenever we type the word "music".
 
+- Use the `Import Library...` submenu in the `Sketch` menu to add the *Sound* library to your project.
 - Import the contents of the sound library using the following statement at the beginning of your code: `import processing.sound.*;`
 - Pick any sound file you like, and place it into your Processing project folder. If you can't decide, you can use the sound file in this repo.
 - Declare a global variable of type `SoundFile` called `sf`.
@@ -76,6 +77,7 @@ Run your program. Make sure that your sound plays when you type "music", and sto
 Simiar to what we've done with audio, we'll listen to keyboard events to trigger viewing a video. But first, we need to set things up:
 
 - Use the `Add File...` command in the `Sketch` menu to add your video file to the project.
+- Use the `Import Library...` submenu in the `Sketch` menu to add the *Video* library to your project.
 - Import the contents of the video library using the following statement at the beginning of your code: `import processing.video.*;`
 - Pick any video file you like, and place it into your Processing project folder. If you can't decide, you can use the video file in this repo.
 - Declare a global variable of type `Movie` called `mv`.
