@@ -48,4 +48,4 @@ The following is a breakdown of the 18 points you can receive for your work on t
 - Novel concept that integrates learning throughout the course ::: *5 Points*
 - Working application ::: *8 Marks*
 
-Put the project inside a directory called `4_3_Final_YourName`. Compress it into a .zip file with the same name. E-mail it to the instructor and the TA (see the syllabus for the contact information).
+Put the project inside a directory called `4_3_Final_YourName`. Compress it into a .zip file with the same name. E-mail it to the instructor **and** the TA (see the syllabus for the contact information).
