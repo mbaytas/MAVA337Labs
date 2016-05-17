@@ -40,7 +40,7 @@ Your progress report will be graded not only based on its existence and format, 
 
 #### 3) Project Submission
 
-**Deadline: 17 May, 2016** ::: *18 Points*
+**Deadline: ~~17~~ 20 May, 2016** ::: *18 Points*
 
 The following is a breakdown of the 18 points you can receive for your work on this stage of the assignment:
 
