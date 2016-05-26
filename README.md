@@ -50,3 +50,4 @@ The links below in this particular section are more general resources that can c
 - [Computerphile (YouTube Channel)](https://www.youtube.com/user/Computerphile)
 - MIT's "6.00 Intro to Computer Science & Programming" lecture videos: [2008 Fall](https://www.youtube.com/playlist?list=PL4C4720A6F225E074), [2011 Spring](https://www.youtube.com/playlist?list=PLB2BE3D6CA77BB8F7)
 - Harvard's CS50: [cs50.harvard.edu](https://cs50.harvard.edu/), [cs50.tv](http://cs50.tv), [cs50.edx.org](https://cs50.edx.org)
+- [Do Experienced Programmers Use Google Frequently?](http://codeahoy.com/2016/04/30/do-experienced-programmers-use-google-frequently) by Umer Mansoor
